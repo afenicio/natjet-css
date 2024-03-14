@@ -1,0 +1,1049 @@
+:root{
+    --datepickerChevron : "!I!/fr/natsystem/natjet/demo_control/app/images/calendar.png";
+    --comboboxChevron : url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/images/calendar.png);
+}
+.NSContentPane.topPane {
+    background-color: #0a71b4;
+    color: #ffffff;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSLabel.appTitle {
+    color: #ffffff;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSLabel.pageTitle {
+    color: #0a71b4;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.NSLabel.LabelTest {
+    color: #336699;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSLabel.LabelWarning {
+    color: #f68b01;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSLabel.LabelPlaceholder {
+    background-color: #dedede;
+    padding: 2px 2px 2px 2px;
+    width: 200px;
+    color: #222222;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSLabel.badge {
+    border-radius: 50%;
+    background-color: #8b0000;
+    padding: 10px 10px 10px 10px;
+    width: 17px;
+    color: #ffffff;
+    text-align: center;
+    height: 17px;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSLabel.block {
+    background-color: #a6c2e1;
+    padding: 10px 10px 10px 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.NSLabel.styled {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    background-color: #4485f4;
+    padding: 5px 10px 5px 10px;
+    color: #ffffff;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSTextArea.styled {
+    border: 1px solid #336699;
+    border-radius: 5px 20px 5px 20px;
+    background-color: #336699;
+    padding: 5px 5px 5px 5px;
+    width: 200px;
+    color: #fafafa;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    text-decoration: none;
+    height: 150px;
+}
+
+.NSTextArea.styled[aria-invalid=true]:not([aria-readonly=true]) {
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+.NSTextArea.styled:disabled,
+.NSTextArea.styled[aria-disabled=true],
+.NSTextArea.styled.disabled {
+    background-color: #efefef;
+}
+
+.NSPushButton.ToolbarLabel {
+    border: 0px solid #eeeeee;
+    padding: 0px 5px 0px 5px;
+    background-color: rgba(0,0,0,0);
+    color: #111111;
+    text-align: left;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.ToolbarLabel:hover,
+.NSPushButton.ToolbarLabel.hover {
+    background-color: rgba(0,0,0,0);
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.ToolbarLabel:disabled,
+.NSPushButton.ToolbarLabel[aria-disabled=true],
+.NSPushButton.ToolbarLabel.disabled {
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.ToolbarUrl {
+    border: 0px solid #eeeeee;
+    padding: 0px 5px 0px 5px;
+    background-color: rgba(0,0,0,0);
+    color: #111111;
+    text-align: left;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration:  underline;
+}
+
+.NSPushButton.ToolbarUrl:hover,
+.NSPushButton.ToolbarUrl.hover {
+    background-color: rgba(0,0,0,0);
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.ToolbarUrl:disabled,
+.NSPushButton.ToolbarUrl[aria-disabled=true],
+.NSPushButton.ToolbarUrl.disabled {
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSToolbar.tabNavigation {
+    color: #333333;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.tabNavigation {
+    border-top: 1px solid #0079c2;
+    border-right: 1px solid #0079c2;
+    border-bottom: 0px solid #0079c2;
+    border-left: 1px solid #0079c2;
+    padding: 0px 20px 0px 20px;
+    color: #ffffff;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #1a87c8;
+    text-align: center;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 40px;
+}
+
+.NSPushButton.tabNavigation[aria-pressed=true] {
+    background-color: #fcfcfc;
+    color: #0079c2;
+}
+
+.NSPushButton.tabNavigation:hover,
+.NSPushButton.tabNavigation.hover {
+    background-color: #fcfcfc;
+    color: #303030;
+}
+
+.NSPushButton.tabNavigation:focus {
+    background-color: #fcfcfc;
+    color: #0079c2;
+}
+
+.NSPushButton.tabNavigation:disabled,
+.NSPushButton.tabNavigation[aria-disabled=true],
+.NSPushButton.tabNavigation.disabled {
+    color: #0079c2;
+    background-color: #fcfcfc;
+}
+
+.NSPushButton.tabNavigationSelected {
+    border-top: 1px solid #0079c2;
+    border-right: 1px solid #0079c2;
+    border-bottom: 0px solid #0079c2;
+    border-left: 1px solid #0079c2;
+    padding: 0px 20px 0px 20px;
+    color: #0079c2;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #fcfcfc;
+    text-align: center;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 40px;
+}
+
+.NSPushButton.tabNavigationSelected[aria-pressed=true] {
+    background-color: #fcfcfc;
+    color: #0079c2;
+}
+
+.NSPushButton.tabNavigationSelected:hover,
+.NSPushButton.tabNavigationSelected.hover {
+    background-color: #fcfcfc;
+    color: #303030;
+}
+
+.NSPushButton.tabNavigationSelected:focus {
+    background-color: #fcfcfc;
+    color: #0079c2;
+}
+
+.NSPushButton.tabNavigationSelected:disabled,
+.NSPushButton.tabNavigationSelected[aria-disabled=true],
+.NSPushButton.tabNavigationSelected.disabled {
+    color: #0079c2;
+    background-color: #fcfcfc;
+}
+
+.NSBulletList.linkNavigation {
+    border: 0px solid #303030;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0079c2;
+    padding: 20px 0px 20px 0px;
+    color: #ffffff;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.NSPushButton.linkNavigation {
+    border: 1px solid #0079c2;
+    padding: 5px 5px 5px 5px;
+    color: #ffffff;
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 120px;
+    text-align: left;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.linkNavigation:hover,
+.NSPushButton.linkNavigation.hover {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #0079c2;
+}
+
+.NSPushButton.linkNavigation:disabled,
+.NSPushButton.linkNavigation[aria-disabled=true],
+.NSPushButton.linkNavigation.disabled {
+    border: 1px solid #ffffff;
+    color: #0079c2;
+    background-color: #ffffff;
+}
+
+.NSPushButton.linkNavigationSelected {
+    border: 1px solid #0079c2;
+    padding: 5px 5px 5px 5px;
+    color: #0079c2;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #ffffff;
+    width: 120px;
+    text-align: left;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.linkNavigationSelected:hover,
+.NSPushButton.linkNavigationSelected.hover {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #0079c2;
+}
+
+.NSPushButton.linkNavigationSelected:disabled,
+.NSPushButton.linkNavigationSelected[aria-disabled=true],
+.NSPushButton.linkNavigationSelected.disabled {
+    border: 1px solid #ffffff;
+    color: #0079c2;
+    background-color: #ffffff;
+}
+
+.NSContainer.Default {
+    border-radius: 5px;
+    background-color: #dedede;
+    width: 200px;
+    height: 150px;
+}
+
+.NSImage.logo {
+}
+
+.NSLabel.cleared {
+}
+
+.NSContentPane.cleared {
+}
+
+.NSContainer.simple {
+    border: 1px solid #999999;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    width: 400px;
+    color: #000000;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    height: 300px;
+}
+
+.NSContainer.rap {
+    border-radius: 0px 50px 0px 50px;
+    background-color: #34332f;
+    width: 296px;
+    color: #ffffff;
+    font-family: verdana,​"lucida sans",​arial,​helvetica,​sans-serif, Helvetica, Sans-Serif;
+    font-size: 14px;
+    text-decoration: none;
+    height: 196px;
+}
+
+.NSLabel.rap {
+    color: #ffffff;
+}
+
+.NSTextField.user {
+    border-top: 1px solid #a9a9a9;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #838383;
+    border-left: 1px solid #999999;
+    background-color: #ffffff;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/icons/user.png);
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 20px;
+    width: 180px;
+    color: #454545;
+    height: 18px;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.NSTextField.user[aria-invalid=true]:not([aria-readonly=true]) {
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+.NSTextField.user:disabled,
+.NSTextField.user[aria-disabled=true],
+.NSTextField.user.disabled {
+    color: #9999aa;
+    background-color: #efefef;
+}
+
+.NSTextField.mail {
+    border-top: 1px solid #a9a9a9;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #838383;
+    border-left: 1px solid #999999;
+    background-color: #ffffff;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/icons/mail.png);
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 20px;
+    width: 180px;
+    color: #454545;
+    height: 18px;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.NSTextField.mail[aria-invalid=true]:not([aria-readonly=true]) {
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+.NSTextField.mail:disabled,
+.NSTextField.mail[aria-disabled=true],
+.NSTextField.mail.disabled {
+    color: #9999aa;
+    background-color: #efefef;
+}
+
+.NSPushButton.action {
+    border-top: 1px solid #eeeeee;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-left: 1px solid #eeeeee;
+    background-color: #ffffff;
+    width: 110px;
+    color: #565656;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.action:hover,
+.NSPushButton.action.hover {
+    background-color: #dff4ff;
+    color: #336699;
+    border: 1px solid #c2e1ef;
+}
+
+.NSPushButton.action:disabled,
+.NSPushButton.action[aria-disabled=true],
+.NSPushButton.action.disabled {
+    color: #9999aa;
+}
+
+.NSPushButton.action_ok {
+    border-top: 1px solid #eeeeee;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-left: 1px solid #eeeeee;
+    background-color: #ffffff;
+    width: 110px;
+    --icon: "!I!/fr/natsystem/natjet/demo_control/app/pics/tick.png";
+    --disabled-icon: "!I!/fr/natsystem/natjet/demo_control/app/pics/tick-disabled.png";
+    color: #529214;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.action_ok:hover,
+.NSPushButton.action_ok.hover {
+    background-color: #e6efc2;
+    color: #529214;
+    border: 1px solid #c6d880;
+}
+
+.NSPushButton.action_ok:disabled,
+.NSPushButton.action_ok[aria-disabled=true],
+.NSPushButton.action_ok.disabled {
+    color: #9999aa;
+}
+
+.NSPushButton.action_ko {
+    border-top: 1px solid #eeeeee;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-left: 1px solid #eeeeee;
+    background-color: #ffffff;
+    width: 110px;
+    --icon: "!I!/fr/natsystem/natjet/demo_control/app/pics/cross.png";
+    --disabled-icon: "!I!/fr/natsystem/natjet/demo_control/app/pics/cross-disabled.png";
+    color: #d12f19;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.action_ko:hover,
+.NSPushButton.action_ko.hover {
+    background-color: #fbe3e4;
+    color: #d12f19;
+    border: 1px solid #fbc2c4;
+}
+
+.NSPushButton.action_ko:disabled,
+.NSPushButton.action_ko[aria-disabled=true],
+.NSPushButton.action_ko.disabled {
+    color: #9999aa;
+}
+
+.NSPushButton.breadcrumb {
+    border: 0px solid #d47f11;
+    padding: 0px 30px 0px 0px;
+    background-color: #d47f11;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/buttons/breadcrumb.png);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    width: 80px;
+    color: #8d500b;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.breadcrumb:hover,
+.NSPushButton.breadcrumb.hover {
+    color: #ffffff;
+}
+
+.NSPushButton.breadcrumb:disabled,
+.NSPushButton.breadcrumb[aria-disabled=true],
+.NSPushButton.breadcrumb.disabled {
+    color: #ffffff;
+    background-color: #d47f11;
+}
+
+.NSPushButton.breadcrumb_last {
+    border: 0px solid #d47f11;
+    padding: 0px 30px 0px 0px;
+    background-color: #d47f11;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/buttons/breadcrumb.png);
+    background-position: 100% -30px;
+    background-repeat: no-repeat;
+    width: 80px;
+    color: #8d500b;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.breadcrumb_last:hover,
+.NSPushButton.breadcrumb_last.hover {
+    color: #ffffff;
+}
+
+.NSPushButton.breadcrumb_last:disabled,
+.NSPushButton.breadcrumb_last[aria-disabled=true],
+.NSPushButton.breadcrumb_last.disabled {
+    color: #ffffff;
+}
+
+.NSPushButton.yahoo {
+    border: 1px solid #bd9e43;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/buttons/yahoo-bg.png);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    color: #000000;
+    background-color: #ffffcc;
+    width: 110px;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.yahoo:hover,
+.NSPushButton.yahoo.hover {
+    background-color: #c789d9;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/buttons/yahoo-bg.png);
+    background-position: -108px 100%;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.NSPushButton.yahoo:disabled,
+.NSPushButton.yahoo[aria-disabled=true],
+.NSPushButton.yahoo.disabled {
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/buttons/yahoo-bg.png);
+    background-position: -108px 100%;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-color: #c789d9;
+}
+
+.NSPushButton.colored {
+    border-top: 1px solid #666666;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #666666;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #666666;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/buttons/shadow-bottom.png);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    width: 110px;
+    color: #ffffff;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.colored:hover,
+.NSPushButton.colored.hover {
+    background-color: #333333;
+    border: 1px solid #333333;
+}
+
+.NSPushButton.colored:disabled,
+.NSPushButton.colored[aria-disabled=true],
+.NSPushButton.colored.disabled {
+    color: #999999;
+}
+
+.NSPushButton.colored_green {
+    border-top: 1px solid #95c700;
+    border-right: 1px solid #336600;
+    border-bottom: 1px solid #336600;
+    border-left: 1px solid #95c700;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #95c700;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/buttons/shadow-bottom.png);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    width: 110px;
+    color: #ffffff;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.colored_green:hover,
+.NSPushButton.colored_green.hover {
+    background-color: #336600;
+    border: 1px solid #336600;
+}
+
+.NSPushButton.colored_green:disabled,
+.NSPushButton.colored_green[aria-disabled=true],
+.NSPushButton.colored_green.disabled {
+    color: #999999;
+}
+
+.NSPushButton.colored_blue {
+    border-top: 1px solid #2daebf;
+    border-right: 1px solid #007d9a;
+    border-bottom: 1px solid #007d9a;
+    border-left: 1px solid #2daebf;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #2daebf;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/buttons/shadow-bottom.png);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    width: 110px;
+    color: #ffffff;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.colored_blue:hover,
+.NSPushButton.colored_blue.hover {
+    background-color: #007d9a;
+    border: 1px solid #007d9a;
+}
+
+.NSPushButton.colored_blue:disabled,
+.NSPushButton.colored_blue[aria-disabled=true],
+.NSPushButton.colored_blue.disabled {
+    color: #999999;
+}
+
+.NSPushButton.colored_magenta {
+    border-top: 1px solid #a9014b;
+    border-right: 1px solid #630030;
+    border-bottom: 1px solid #630030;
+    border-left: 1px solid #a9014b;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #a9014b;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/buttons/shadow-bottom.png);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    width: 110px;
+    color: #ffffff;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.colored_magenta:hover,
+.NSPushButton.colored_magenta.hover {
+    background-color: #630030;
+    border: 1px solid #630030;
+}
+
+.NSPushButton.colored_magenta:disabled,
+.NSPushButton.colored_magenta[aria-disabled=true],
+.NSPushButton.colored_magenta.disabled {
+    color: #999999;
+}
+
+.NSPushButton.colored_red {
+    border-top: 1px solid #e33100;
+    border-right: 1px solid #872300;
+    border-bottom: 1px solid #872300;
+    border-left: 1px solid #e33100;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #e33100;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/buttons/shadow-bottom.png);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    width: 110px;
+    color: #ffffff;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.colored_red:hover,
+.NSPushButton.colored_red.hover {
+    background-color: #872300;
+    border: 1px solid #872300;
+}
+
+.NSPushButton.colored_red:disabled,
+.NSPushButton.colored_red[aria-disabled=true],
+.NSPushButton.colored_red.disabled {
+    color: #999999;
+}
+
+.NSPushButton.colored_orange {
+    border-top: 1px solid #ff5c00;
+    border-right: 1px solid #d45500;
+    border-bottom: 1px solid #d45500;
+    border-left: 1px solid #ff5c00;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #ff5c00;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/buttons/shadow-bottom.png);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    width: 110px;
+    color: #ffffff;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.colored_orange:hover,
+.NSPushButton.colored_orange.hover {
+    background-color: #d45500;
+    border: 1px solid #d45500;
+}
+
+.NSPushButton.colored_orange:disabled,
+.NSPushButton.colored_orange[aria-disabled=true],
+.NSPushButton.colored_orange.disabled {
+    color: #999999;
+}
+
+.NSPushButton.colored_yellow {
+    border-top: 1px solid #ffb515;
+    border-right: 1px solid #fc9200;
+    border-bottom: 1px solid #fc9200;
+    border-left: 1px solid #ffb515;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #ffb515;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/buttons/shadow-bottom.png);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    width: 110px;
+    color: #ffffff;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.colored_yellow:hover,
+.NSPushButton.colored_yellow.hover {
+    background-color: #fc9200;
+    border: 1px solid #fc9200;
+}
+
+.NSPushButton.colored_yellow:disabled,
+.NSPushButton.colored_yellow[aria-disabled=true],
+.NSPushButton.colored_yellow.disabled {
+    color: #999999;
+}
+
+.NSDatePicker.calIcon {
+    border-top: 1px solid #ffb515;
+    border-right: 1px solid #fc9200;
+    border-bottom: 1px solid #fc9200;
+    border-left: 1px solid #ffb515;
+    --popup-icon: "!I!/fr/natsystem/natjet/echo/webcontainer/resource/image/calendar_day.png";
+    padding: 1px 5px 1px 5px;
+    background-color: #ffffff;
+    width: 200px;
+    color: #454545;
+    height: 18px;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.NSDatePicker.calIcon[aria-invalid=true]:not([aria-readonly=true]) {
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+.NSDatePicker.calIcon:disabled,
+.NSDatePicker.calIcon[aria-disabled=true],
+.NSDatePicker.calIcon.disabled {
+    color: #9999aa;
+    background-color: #efefef;
+}
+
+.NSDatePicker.inShadowed {
+    border-top: 1px solid #ffb515;
+    border-right: 1px solid #fc9200;
+    border-bottom: 1px solid #fc9200;
+    border-left: 1px solid #ffb515;
+    --popup-icon: "!I!/fr/natsystem/natjet/echo/webcontainer/resource/image/calendar_day.png";
+    padding: 1px 5px 1px 5px;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/natjet/demo_control/app/pics/buttons/shadow-bottom.png);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    color: #454545;
+    background-color: #ffffff;
+    width: 200px;
+    height: 18px;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.NSDatePicker.inShadowed[aria-invalid=true]:not([aria-readonly=true]) {
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+.NSDatePicker.inShadowed:disabled,
+.NSDatePicker.inShadowed[aria-disabled=true],
+.NSDatePicker.inShadowed.disabled {
+    color: #9999aa;
+    background-color: #efefef;
+}
+
+.NSContentPane.clear {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.NSGroupBox.rounded {
+    border: 5px solid #336699;
+    border-radius: 10px;
+    background-color: #cccccc;
+    width: 200px;
+    color: #303030;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    text-decoration: none;
+    height: 150px;
+}
+
+.NSImage.rounded {
+    border: 1px solid #909090;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.NSTabbedPane.blockRed {
+    width: 200px;
+    height: 150px;
+}
+
+.NSTabbedPane.blockRed > .hd [role=tab] > div {
+    inset: 0px;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSTabbedPane.blockRed > .hd [role=tab][aria-selected=false] > div {
+    padding: 5px 10px 5px 10px;
+    color: #b01000;
+    background-color: #ff4900;
+    border: 1px solid #ff4900;
+}
+
+.NSTabbedPane.blockRed > .hd [role=tab] > div:hover,
+.NSTabbedPane.blockRed > .hd [role=tab] > div.hover {
+    color: #b01000;
+    border: 1px solid #b01000;
+    background-color: #ffffff;
+}
+
+.NSTabbedPane.blockRed > .hd [role=tab][aria-selected=true] > div {
+    background-color: #b01000;
+    color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #b01000;
+}
+
+.NSTabbedPane.blockRed > .bd {
+    border: 1px solid #b01000;
+    color: #ffffff;
+    background-color: #b01000;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.NSTabbedPane.darked {
+    width: 200px;
+    height: 150px;
+}
+
+.NSTabbedPane.darked > .hd [role=tab] > div {
+    inset: 0px;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 0 0 -1px;
+}
+
+.NSTabbedPane.darked > .hd [role=tab][aria-selected=false] > div {
+    padding: 5px 10px 5px 10px;
+    color: #ffffff;
+    background-color: #303030;
+    border: 1px solid #b5b5b5;
+}
+
+.NSTabbedPane.darked > .hd [role=tab] > div:hover,
+.NSTabbedPane.darked > .hd [role=tab] > div.hover {
+    background-color: #0f0f0f;
+}
+
+.NSTabbedPane.darked > .hd [role=tab][aria-selected=true] > div {
+    background-color: #e0e0e0;
+    color: #454545;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #ffffff;
+}
+
+.NSTabbedPane.darked > .bd {
+    border: 1px solid #ffffff;
+    color: #000000;
+    background-color: #e0e0e0;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.NSContainer.forDarked {
+    border: 1px solid #000000;
+    background-color: #000000;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.NSRuler.RulerDouble {
+    --orientation: 0;
+}
+
+.NSWebBrowser.CleanBrowser {
+    border: 0px solid #dcdcdc;
+}
+
+.NSTreeView.GroupLine {
+    border-top: 1px solid #a9a9a9;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #838383;
+    border-left: 1px solid #999999;
+    color: #444444;
+    background-color: #ffffff;
+    width: 200px;
+    font-family: Liberation Sans, Cantarell, Arial, Helvetica, sans-serif, Helvetica, Sans-Serif;
+    font-size: 11px;
+    text-decoration: none;
+    height: 150px;
+}
+
+.NSTreeView.GroupLine .outline-table-cell {
+    padding: 1px 5px 1px 5px;
+}
+
+.NSTreeView.GroupLine > .hd,
+.NSTreeView.GroupLine > .corner {
+    color: #333333;
+    background-color: #afd9ff;
+}
+
+.NSTreeView.GroupLine .table-cell > div {
+    padding: 1px 5px 1px 5px;
+}
+
+.NSTreeView.GroupLine .bd .table-row:hover > td,
+.NSTreeView.GroupLine .col .table-row:hover > td,
+.NSTreeView.GroupLine .bd .table-row.hover > td,
+.NSTreeView.GroupLine .col .table-row.hover > td {
+    background-color: #5185e0 !important;
+    color: #ffffff !important;
+}
+
+.NSTreeView.GroupLine .bd .table-row[aria-selected=true] > td,
+.NSTreeView.GroupLine .col .table-row[aria-selected=true] > td,
+.NSTreeView.GroupLine .bd .table-row.selected > td,
+.NSTreeView.GroupLine .col .table-row.selected > td {
+    background-color: #375a97 !important;
+    color: #ffffff !important;
+}
