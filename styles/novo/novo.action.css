@@ -1904,7 +1904,7 @@
     padding-right: 5px;
 }
 .read::before {
-    content: "\f518"; /* fa-book-open */
+    content: "\f02d"; /* fa-book-open */
     font-family: FontAwesome;
     padding-right: 5px;
 }
