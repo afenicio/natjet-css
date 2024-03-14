@@ -1,0 +1,130 @@
+:root {
+
+    /** 3 color system : main brand color, secondary grey color and a tertairy color for brand color **/
+    --primary-color: --black-grey;
+    --secondary-color: #E0E0E0;
+    --tertiary-color: #97B1A6;
+    --oposite-primary-color: #fcfcfc;
+    --primary-color-hover: #0a71b4;
+    --transparent: rgba(252, 252, 252, 0.0);
+    /** font definition **/
+    --font-stack: Cantarell, Arial, Helvetica, sans-serif;
+    --font-size: 14px;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+    /** We have 3 colors for texts : black for high heading, black-grey for text in field
+     and label for which we are using the primary color **/
+    --black: #000;
+
+    --black-grey: #333;
+    --blue: #4a90d9;
+    --white: #fafafa;
+    --white-grey: #f2f2f2;
+    --grey-light: #eee;
+    --green: #4cad22;
+    --darker-light: rgba(0, 0, 0, 0.12);
+    --darker-soft: rgba(0, 0, 0, 0.06);
+    --lighter-light: rgba(255, 255, 255, 0.15);
+    --lighter-mid: rgba(255, 255, 255, 0.5);
+    --lighter-strong: rgba(255, 255, 255, 0.85);
+
+    /**borders**/
+    --border-color: #b6b6b3;
+    --border: 1px solid var(--border-color);
+    --no-border: 0px solid var(--transparent);
+    --border-radius: 3px;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+    --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+    --cell-insets: 5px;
+    --cell-border: 1px solid #ccc;
+
+    /**fields **/
+    --field-foreground: var(--black-grey);
+    --field-background: var(--white);
+    --field-border: var(--border);
+    --field-border-radius: var(--border-radius);
+    --field-background: #fff;
+    --field-insets: 2px 5px;
+    --field-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+    --field-weight: normal;
+    --field-height: 20px;
+    /** field rollover **/
+    --field-rollover-border: var(--border);
+
+    /**buttons**/
+    --button-border: var(--border);
+    --button-background: #fafafa;
+    --button-foreground: var(--fg);
+    --button-shadow: var(--shadow);
+    --button-border-radius: var(--border-radius);
+    /**buttons rollover**/
+    --button-rollover-border: var(--border);
+
+    --menu-background: #fff;
+    --menu-foreground: var(--fg);
+    --header-foreground: #111;
+    --header-background: #eee;
+    --heading-foreground: var(--blue);
+    --selection-foreground: var(--white);
+    --selection-background: var(--blue);
+    --selection-border: 1px solid var(--selection-background);
+    --rollover-foreground: var(--black);
+    /*--rollover-background: var(--blue-soft);*/
+    --rollover-border: 1px solid var(--blue);
+    --invalid-foreground: #f00;
+    --invalid-border: 1px solid var(--invalid-foreground);
+    --disabled-foreground: #999;
+    --disabled-background: #eee;
+    --disabled-border: 1px solid #ccc;
+    --focused-shadow-1: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    --focused-shadow-2: 0 0 8px rgba(102, 175, 233, 0.6);
+    --focused-border: 1px solid #66afe9;
+
+    /*region tab paddings*/
+    --tab-padding-vertical: 10px;
+    --tab-padding-horizontal: 15px;
+
+
+    /*region chevrons*/
+    --comboboxChevron: url(?sid=Echo.Image&iid=/fr/natsystem/resources/pics/chevrons/down-black.png);
+    --comboboxChevron-invalid: url(?sid=Echo.Image&iid=/fr/natsystem/resources/pics/chevrons/down-red.png);
+    --comboboxChevron-disabled: url(?sid=Echo.Image&iid=/fr/natsystem/resources/pics/chevrons/down-grey.png);
+    --suggestfieldChevron: "!I!/fr/natsystem/resources/pics/chevrons/down-black.png";
+    --suggestfieldChevron-disabled: "!I!/fr/natsystem/resources/pics/chevrons/down-grey.png";
+    --datepickerChevron: "!I!/fr/natsystem/resources/pics/chevrons/down-blue.png";
+    --datepickerChevron-disabled: "!I!/fr/natsystem/resources/pics/chevrons/down-grey.png";
+
+    /*Missing in generics*/
+    --field-rollover-background: auto;
+    --field-rollover-foreground: auto;
+    --list-selection-background: auto;
+    --list-selection-foreground: auto;
+    --list-rollover-foreground: auto;
+    --list-rollover-background: auto;
+    --text-selection-foreground: auto;
+    --text-selection-background: auto;
+    --opposite-primary-color: auto;
+    --bg-menubar: auto;
+    --bg-infobox: auto;
+    --list-background-image: auto;
+    --tab-padding: auto;
+    --tabbed-border-radius: auto;
+    --tab-font-stack: auto;
+    --tab-font-size: auto;
+    --tab-font-weight: auto;
+    --tab-margin: auto;
+    --tab-background-image: auto;
+    --tab-background-color: auto;
+    --border-bottom: auto;
+    --selected-tab-background: auto;
+    --selected-tab-foreground: auto;
+    --tab-selected-background-image: auto;
+    --background-popup: auto;
+    --checkBox-accent-color: auto;
+    --checkBox-rollover-accent-color: auto;
+
+    /*Missing in actions*/
+    --br: auto;
+    --rollover-background: auto;
+    --fg: auto;
+}

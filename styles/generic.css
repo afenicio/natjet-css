@@ -1,0 +1,4309 @@
+body {
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+    color: var(--field-foreground);
+}
+
+#serverDelayContainer > #serverDelay {
+    font-family: var(--font-stack);
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--field-foreground);
+    background-color: #ffffff;
+    padding: 3rem 3rem 3rem 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+}
+
+#stopError {
+    font-family: var(--font-stack);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #851c13;
+    border: var(--no-border);
+    detail-insets: 2rem 2rem 2rem 2rem;
+}
+
+#stopError > .action {
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: var(--lighter-light);
+    outline: 0px solid rgba(255, 255, 255, 0.5);
+}
+
+#stopError > .message {
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+#sessionExpiration {
+    font-family: var(--font-stack);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1f1f5f;
+    border: var(--no-border);
+    detail-insets: 2rem 2rem 2rem 2rem;
+}
+
+#sessionExpiration > .action {
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: var(--lighter-light);
+    margin: 1rem 0px 0px 0px;
+    outline: 0px solid var(--lighter-mid);
+}
+
+#sessionExpiration > .message {
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.NSDatePicker.Default {
+    border: var(--field-border);
+    box-shadow: var(--field-shadow);
+    --popup-icon: var(--datepickerChevron);
+    padding: var(--field-insets);
+    color: var(--field-foreground);
+    border-radius: var(--field-border-radius);
+    background-color: var(--field-background);
+    width: 200px;
+    --popup-icon-disabled: var(--datepickerChevron-disabled);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: var(--field-weight);
+    font-style: normal;
+    text-decoration: none;
+    height: var(--field-height);
+}
+
+
+.NSDatePicker-Default-popup {
+}
+
+.NSDatePicker.Default .content-icon > img {
+}
+
+.NSDatePicker.Default:hover,
+.NSDatePicker.Default.hover {
+    background-color: var(--field-rollover-background);
+    color: var(--field-rollover-foreground);
+    border: var(--field-rollover-border);
+}
+
+.NSDatePicker.Default:focus {
+    box-shadow: var(--focused-shadow-1), var(--focused-shadow-2);
+    outline: 0;
+    border: var(--focused-border);
+}
+
+.NSDatePicker.Default[aria-invalid=true]:not([aria-readonly=true]) {
+    color: var(--invalid-foreground);
+    border: var(--invalid-border);
+}
+
+.NSDatePicker.Default:disabled,
+.NSDatePicker.Default[aria-disabled=true],
+.NSDatePicker.Default.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+
+.NSDatePicker.edition {
+    border: var(--no-border);
+    box-shadow: var(--field-shadow);
+    --popup-icon: "!I!/fr/natsystem/resources/pics/chevrons/down-blue.png";
+    padding: 0px 0px 0px 0px;
+    color: var(--field-foreground);
+    border-radius: var(--field-border-radius);
+    background-color: var(--field-background);
+    width: 100%;
+    --popup-icon-disabled: "!I!/fr/natsystem/resources/pics/chevrons/down-grey.png";
+    height: 100%;
+}
+
+.NSDatePicker-edition-popup {
+}
+
+.NSDatePicker.edition .content-icon > img {
+}
+
+.NSDatePicker.edition:hover,
+.NSDatePicker.edition.hover {
+    background-color: var(--field-rollover-background);
+}
+
+.NSDatePicker.edition:focus {
+    box-shadow: var(--focused-shadow-1), var(--focused-shadow-2);
+    outline: 0;
+    border: var(--no-border);
+}
+
+.NSDatePicker.edition[aria-invalid=true]:not([aria-readonly=true]) {
+    color: var(--invalid-foreground);
+    border: var(--no-border);
+}
+
+.NSDatePicker.edition:disabled,
+.NSDatePicker.edition[aria-disabled=true],
+.NSDatePicker.edition.disabled {
+    border: var(--no-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+
+.NSFileUploader.Default {
+    line-height: 25px;
+    height: var(--field-height);
+    width: 300px;
+}
+
+.NSFileUploader.Default > .button-container > .button {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    color: var(--button-foreground);
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+    padding: 0px 6px 0px 6px;
+
+}
+
+.NSFileUploader.Default > .button-container > .button:hover,
+.NSFileUploader.Default > .button-container > .button.hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+
+}
+
+.NSFileUploader.Default > .progress > .bar {
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+    color: var(--white);
+    background-color: var(--progression-color);
+}
+
+.NSFileUploader.Default > .info > .reset {
+    color: var(--invalid-foreground);
+    background-color: #eeeeee;
+    border: var(--field-border);
+}
+
+.NSFileUploader.Default > .progress {
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+    border-radius: var(--border-radius);
+}
+
+.NSFileUploader.Default > .info {
+    color: #999999;
+    background-color: #eeeeee;
+    border-radius: var(--border-radius);
+    border: var(--field-border);
+}
+
+.NSFileUploader.Default:focus {
+    box-shadow: var(--focused-shadow-1), var(--focused-shadow-2);
+    outline: 0;
+    border: var(--focused-border);
+}
+
+.NSNumericalTextField.Default {
+    border: var(--field-border);
+    box-shadow: var(--field-shadow);
+    padding: var(--field-insets);
+    color: var(--field-foreground);
+    border-radius: var(--field-border-radius);
+    background-color: var(--field-background);
+    width: 200px;
+    height: var(--field-height);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSNumericalTextField.Default:hover,
+.NSNumericalTextField.Default.hover {
+    background-color: var(--field-rollover-background);
+    color: var(--field-rollover-foreground);
+    border: var(--field-rollover-border);
+}
+
+.NSNumericalTextField.Default:focus {
+    box-shadow: var(--focused-shadow-1), var(--focused-shadow-2);
+    outline: 0;
+    border: var(--focused-border);
+}
+
+.NSNumericalTextField.Default[aria-invalid=true]:not([aria-readonly=true]) {
+    color: var(--invalid-foreground);
+    border: var(--invalid-border);
+}
+
+
+.NSNumericalTextField.Default:disabled,
+.NSNumericalTextField.Default[aria-disabled=true],
+.NSNumericalTextField.Default.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+
+.NSNumericalTextField.edition {
+    border: var(--no-border);
+    box-shadow: var(--field-shadow);
+    padding: 0px 0px 0px 0px;
+    color: var(--field-foreground);
+    border-radius: var(--field-border-radius);
+    background-color: var(--field-background);
+    width: 100%;
+    height: 100%;
+}
+
+.NSNumericalTextField.edition:hover,
+.NSNumericalTextField.edition.hover {
+    background-color: var(--field-rollover-background);
+    color: var(--field-rollover-foreground);
+    border: var(--field-rollover-border);
+}
+
+.NSNumericalTextField.edition:focus {
+    box-shadow: var(--focused-shadow-1), var(--focused-shadow-2);
+    outline: 0;
+    border: var(--no-border);
+}
+
+.NSNumericalTextField.edition[aria-invalid=true]:not([aria-readonly=true]) {
+    color: var(--invalid-foreground);
+    border: var(--no-border);
+}
+
+
+.NSNumericalTextField.edition:disabled,
+.NSNumericalTextField.edition[aria-disabled=true],
+.NSNumericalTextField.edition.disabled {
+    border: var(--no-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSSpinner.Default input {
+    border: var(--field-border);
+    box-shadow: var(--field-shadow);
+    padding: var(--field-insets);
+    --spin-disabled-increment-icon: "!I!/fr/natsystem/resources/pics/chevrons/up-grey.png";
+    color: var(--field-foreground);
+    --spin-decrement-icon: "!I!/fr/natsystem/resources/pics/chevrons/down-black.png";
+    --spin-disabled-decrement-icon: "!I!/fr/natsystem/resources/pics/chevrons/down-grey.png";
+    border-radius: var(--field-border-radius);
+    --spin-increment-icon: "!I!/fr/natsystem/resources/pics/chevrons/up-black.png";
+    background-color: var(--field-background);
+    width: 50px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: var(--field-weight);
+    font-style: normal;
+    text-decoration: none;
+    height: 20px;
+}
+
+.NSSpinner.Default > .btn {
+    padding: 0px 5px 0px 5px;
+}
+
+.NSSpinner.Default > .btn:hover,
+.NSSpinner.Default > .btn.hover {
+    background-color: var(--field-rollover-background);
+}
+
+.NSSpinner.Default > .btn:disabled,
+.NSSpinner.Default > .btn[aria-disabled=true],
+.NSSpinner.Default > .btn.disabled {
+    background-color: var(--disabled-background);
+}
+
+.NSSpinner.Default input:focus {
+    box-shadow: var(--focused-shadow-1), var(--focused-shadow-2);
+    outline: 0;
+    border: var(--focused-border);
+}
+
+.NSSpinner.Default input[aria-invalid=true]:not([aria-readonly=true]) {
+    color: var(--invalid-foreground);
+    border: var(--invalid-border);
+}
+
+.NSSpinner.Default input:disabled,
+.NSSpinner.Default input[aria-disabled=true],
+.NSSpinner.Default input.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSSuggestField-Default-popup .suggest > li {
+    padding: 7px 7px 7px 7px;
+}
+
+.NSSuggestField-Default-popup .suggest > li:hover,
+.NSSuggestField-Default-popup .suggest > li.hover {
+    color: var(--list-rollover-foreground);
+    background-color: var(--list-rollover-background);
+    border: var(--selection-border);
+}
+
+.NSSuggestField-Default-popup .suggest > li[aria-selected=true],
+.NSSuggestField-Default-popup .suggest > li.selected {
+    border: var(--selection-border);
+    border-radius: var(--border-radius);
+    background-color: var(--list-selection-background);
+    color: var(--list-selection-foreground);
+}
+
+.NSSuggestField.Default {
+    box-shadow: var(--field-shadow);
+    --popup-icon: var(--suggestfieldChevron);
+    padding: var(--field-insets);
+    color: var(--field-foreground);
+    height: var(--field-height);
+    border: var(--field-border);
+    border-radius: var(--field-border-radius);
+    background-color: var(--field-background);
+    width: 200px;
+    --popup-icon-disabled: var(--suggestfieldChevron-disabled);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+    font-weight: var(--field-weight);
+}
+
+.NSSuggestField-Default-popup {
+    border: var(--field-border);
+    color: var(--field-foreground);
+    background-color: #ffffff;
+    border-radius: var(--field-border-radius);
+}
+
+.NSSuggestField.Default:focus {
+    box-shadow: var(--focused-shadow-1), var(--focused-shadow-2);
+    outline: 0;
+    border: var(--focused-border);
+}
+
+.NSSuggestField.Default[aria-invalid=true]:not([aria-readonly=true]) {
+    color: var(--invalid-foreground);
+    border: var(--invalid-border);
+}
+
+.NSSuggestField.Default:disabled,
+.NSSuggestField.Default[aria-disabled=true],
+.NSSuggestField.Default.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSSuggestField.edition {
+    box-shadow: var(--field-shadow);
+    --popup-icon: "!I!/fr/natsystem/resources/pics/chevrons/down-black.png";
+    padding: 0px 0px 0px 0px;
+    color: var(--field-foreground);
+    height: 100%;
+    border: var(--no-border);
+    border-radius: var(--field-border-radius);
+    background-color: var(--field-background);
+    width: 100%;
+    --popup-icon-disabled: "!I!/fr/natsystem/resources/pics/chevrons/down-grey.png";
+}
+
+.NSSuggestField-edition-popup .suggest > li {
+    padding: 7px 7px 7px 7px;
+}
+
+.NSSuggestField-edition-popup .suggest > li:hover,
+.NSSuggestField-edition-popup .suggest > li.hover {
+    color: var(--selection-foreground);
+    background-color: var(--selection-background);
+    border: var(--selection-border);
+}
+
+.NSSuggestField-edition-popup .suggest > li[aria-selected=true],
+.NSSuggestField-edition-popup .suggest > li.selected {
+    border: var(--selection-border);
+    border-radius: var(--field-border-radius);
+    background-color: var(--selection-background);
+    color: var(--selection-foreground);
+}
+
+.NSSuggestField-edition-popup {
+    border: var(--field-border);
+    color: var(--field-foreground);
+    background-color: var(--field-background);
+    border-radius: var(--field-border-radius);
+}
+
+.NSSuggestField.Default:hover,
+.NSSuggestField.Default.hover {
+    background-color: var(--field-rollover-background);
+    color: var(--field-rollover-foreground);
+    border: var(--field-rollover-border);
+}
+
+.NSSuggestField.edition:focus {
+    box-shadow: var(--focused-shadow-1), var(--focused-shadow-2);
+    outline: 0;
+    border: var(--no-border);
+}
+
+.NSSuggestField.edition[aria-invalid=true]:not([aria-readonly=true]) {
+    color: var(--invalid-foreground);
+    border: var(--no-border);
+}
+
+.NSSuggestField.edition:disabled,
+.NSSuggestField.edition[aria-disabled=true],
+.NSSuggestField.edition.disabled {
+    border: var(--no-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+
+.NSSuggestField.Default::selection {
+    color: var(--text-selection-foreground);
+    background-color: var(--text-selection-background);
+}
+
+.NSTextArea.Default {
+    border: var(--field-border);
+    box-shadow: var(--field-shadow);
+    padding: 10px 10px 10px 10px;
+    color: var(--field-foreground);
+    border-radius: var(--field-border-radius);
+    background-color: var(--field-background);
+    width: 200px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: var(--field-weight);
+    text-decoration: none;
+    height: 150px;
+}
+
+.NSTextAre.Default:hover,
+.NSTextArea.Default.hover {
+    background-color: var(--field-rollover-background);
+    color: var(--field-rollover-foreground);
+    border: var(--field-rollover-border);
+}
+
+.NSTextArea.Default:focus {
+    box-shadow: var(--focused-shadow-1), var(--focused-shadow-2);
+    outline: 0;
+    border: var(--focused-border);
+}
+
+.NSTextArea.Default[aria-invalid=true]:not([aria-readonly=true]) {
+    color: var(--invalid-foreground);
+    border: var(--invalid-border);
+}
+
+.NSTextArea.Default:disabled,
+.NSTextArea.Default[aria-disabled=true],
+.NSTextArea.Default.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSTextField.Default {
+    border: var(--field-border);
+    box-shadow: var(--field-shadow);
+    padding: var(--field-insets);
+    color: var(--field-foreground);
+    border-radius: var(--field-border-radius);
+    background-color: var(--field-background);
+    width: 200px;
+    height: var(--field-height);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: var(--field-weight);
+    text-decoration: none;
+}
+
+/*mettre le hover avant le disabled de telle sorte à ce que lorsqu'on hover sur
+un composant disabled, c'est le disabled qui est prioritaire*/
+.NSTextField.Default:hover,
+.NSTextField.Default.hover {
+    background-color: var(--field-rollover-background);
+    color: var(--field-rollover-foreground);
+    border: var(--field-rollover-border);
+}
+
+.NSTextField.Default:focus {
+    box-shadow: var(--focused-shadow-1), var(--focused-shadow-2);
+    outline: 0;
+    border: var(--focused-border);
+}
+
+.NSTextField.Default[aria-invalid=true]:not([aria-readonly=true]) {
+    color: var(--invalid-foreground);
+    border: var(--invalid-border);
+}
+
+
+.NSTextField.Default:disabled,
+.NSTextField.Default[aria-disabled=true],
+.NSTextField.Default.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+
+.NSTextField.edition {
+    border: var(--no-border);
+    box-shadow: var(--field-shadow);
+    padding: 0px 0px 0px 0px;
+    color: var(--field-foreground);
+    border-radius: var(--field-background);
+    background-color: var(--field-background);
+    width: 100%;
+    height: 100%;
+}
+
+.NSTextField.edition:focus {
+    box-shadow: var(--focused-shadow-1), var(--focused-shadow-2);
+    outline: 0;
+    border: var(--no-border);
+}
+
+.NSTextField.edition[aria-invalid=true]:not([aria-readonly=true]) {
+    color: var(--invalid-foreground);
+    border: var(--no-border);
+}
+
+.NSTextField.edition:disabled,
+.NSTextField.edition[aria-disabled=true],
+.NSTextField.edition.disabled {
+    border: var(--no-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSTextField.Default::selection {
+    color: var(--text-selection-foreground);
+    background-color: var(--text-selection-background);
+}
+
+.NSCheckBox.Default {
+    color: var(--field-foreground);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSCheckBox.Default > .text-icon > .content-state {
+    margin-right: 5px;
+}
+
+.NSCheckBox.Default:hover,
+.NSCheckBox.Default.hover {
+    color: var(--field-rollover-foreground);
+}
+
+.NSCheckBox.Default:disabled,
+.NSCheckBox.Default[aria-disabled=true],
+.NSCheckBox.Default.disabled {
+    color: var(--disabled-foreground);
+}
+
+.NSMenuButton.Default {
+    box-shadow: var(--button-shadow);
+    --menu-expand-icon: "!I!/fr/natsystem/resources/pics/chevrons/right-black.png";
+    padding: var(--field-insets);
+    --menu-checked-icon: "!I!/fr/natsystem/resources/pics/actions/tick-black.png";
+    color: var(--button-foreground);
+    --menu-drop-down-icon: "!I!/fr/natsystem/resources/pics/chevrons/down-black.png";
+    height: 30px;
+    border: var(--field-border);
+    border-radius: var(--border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.owned-by-NSMenuButton-Default {
+    background-color: var(--menu-background);
+    dropdowninsets: 3px 3px 3px 3px;
+    color: var(--menu-foreground);
+    border: var(--no-border);
+    dropdownbackground: var(--button-background);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+}
+
+.NSMenuButton.Default:hover,
+.NSMenuButton.Default.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSMenuButton.Default [aria-selected=true],
+.NSMenuButton.Default .selected {
+    background-color: var(--selection-background);
+    color: var(--selection-foreground);
+}
+
+.owned-by-NSMenuButton-Default [aria-selected=true],
+.owned-by-NSMenuButton-Default .selected {
+    background-color: var(--selection-background);
+    color: var(--selection-foreground);
+}
+
+.NSMenuButton.Default:disabled,
+.NSMenuButton.Default[aria-disabled=true],
+.NSMenuButton.Default.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.owned-by-NSMenuButton-Default:disabled,
+.owned-by-NSMenuButton-Default[aria-disabled=true],
+.owned-by-NSMenuButton-Default.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.Default {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.Default[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+    color: var(--primary-color);
+}
+
+.NSPushButton.Default[data-type=label]:hover,
+.NSPushButton.Default[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Default[data-type=label]:disabled,
+.NSPushButton.Default[data-type=label][aria-disabled=true],
+.NSPushButton.Default[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Default[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+    color: var(--primary-color);
+}
+
+.NSPushButton.Default[data-type=url]:hover,
+.NSPushButton.Default[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Default[data-type=url]:disabled,
+.NSPushButton.Default[data-type=url][aria-disabled=true],
+.NSPushButton.Default[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+/*
+.NSPushButton.Default:hover,
+.NSPushButton.Default.hover {
+    background-color: var(--primary-color-hover);
+    border: var(--rollover-button-border);
+    color: var(--button-rollover-foreground);
+}
+*/
+.NSPushButton:hover,
+.NSPushButton.hover {
+    background-color: var(--button-rollover-background);
+    border: var(--button-rollover-border);
+    color: var(--button-rollover-foreground);
+}
+
+.NSPushButton.Default:disabled,
+.NSPushButton.Default[aria-disabled=true],
+.NSPushButton.Default.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSToggleButton.Default {
+    border: var(--button-border);
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    color: var(--button-foreground);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+    height: 26px;
+}
+
+.NSToggleButton.Default[aria-pressed=true] {
+    background-color: var(--selection-background);
+    color: var(--selection-foreground);
+}
+
+.NSToggleButton.Default:hover,
+.NSToggleButton.Default.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSToggleButton.Default:disabled,
+.NSToggleButton.Default[aria-disabled=true],
+.NSToggleButton.Default.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSRadioButton.Default {
+    color: var(--field-foreground);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSRadioButton.Default > .text-icon > .content-state {
+    margin-right: 5px;
+}
+
+.NSRadioButton.Default:hover,
+.NSRadioButton.Default.hover {
+    color: var(--field-rollover-foreground);
+}
+
+.NSRadioButton.Default:disabled,
+.NSRadioButton.Default[aria-disabled=true],
+.NSRadioButton.Default.disabled {
+    color: var(--disabled-foreground);
+}
+
+.NSBulletList.Default {
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSContextMenu.Default {
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+}
+
+.owned-by-NSContextMenu-Default {
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    color: var(--menu-foreground);
+    background-color: var(--menu-background);
+    border: var(--no-border);
+}
+
+.NSContextMenu.Default [aria-selected=true],
+.NSContextMenu.Default .selected {
+    background-color: var(--selection-background);
+    color: var(--selection-foreground);
+}
+
+.owned-by-NSContextMenu-Default [aria-selected=true],
+.owned-by-NSContextMenu-Default .selected {
+    background-color: var(--selection-background);
+    color: var(--selection-foreground);
+}
+
+.NSContextMenu.Default .menuitem:disabled,
+.NSContextMenu.Default .menuitem[aria-disabled=true],
+.NSContextMenu.Default .menuitem.disabled {
+    color: var(--disabled-foreground);
+}
+
+.owned-by-NSContextMenu-Default .menuitem:disabled,
+.owned-by-NSContextMenu-Default .menuitem[aria-disabled=true],
+.owned-by-NSContextMenu-Default .menuitem.disabled {
+    color: var(--disabled-foreground);
+}
+
+.NSMenuBar.Default {
+    --menu-expand-icon: "!I!/fr/natsystem/resources/pics/chevrons/right-black.png";
+    background-color: var(--bg-menubar);
+    --menu-checked-icon: "!I!/fr/natsystem/resources/pics/actions/tick-black.png";
+    color: #ffffff;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+}
+
+.owned-by-NSMenuBar-Default {
+    background-color: #ffffff;
+    color: var(--field-foreground);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+}
+
+.NSMenuBar.Default [aria-selected=true],
+.NSMenuBar.Default .selected {
+    background-color: var(--selection-background);
+    color: var(--selection-foreground);
+}
+
+.owned-by-NSMenuBar-Default [aria-selected=true],
+.owned-by-NSMenuBar-Default .selected {
+    background-color: var(--selection-background);
+    color: var(--selection-foreground);
+}
+
+.NSMenuBar.Default .menuitem:disabled,
+.NSMenuBar.Default .menuitem[aria-disabled=true],
+.NSMenuBar.Default .menuitem.disabled {
+    color: #999999;
+    background-color: var(--disabled-background);
+}
+
+.owned-by-NSMenuBar-Default .menuitem:disabled,
+.owned-by-NSMenuBar-Default .menuitem[aria-disabled=true],
+.owned-by-NSMenuBar-Default .menuitem.disabled {
+    color: #999999;
+    background-color: var(--disabled-background);
+}
+
+.NSCalendar.Default {
+    border: var(--field-border);
+    background-color: #ffffff;
+    width: 250px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    height: 285px;
+}
+
+.NSCalendar.Default .day {
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.NSCalendar.Default > .hd {
+    color: var(--header-foreground);
+    background-color: var(--header-background);
+}
+
+.NSCalendar.Default .day:hover,
+.NSCalendar.Default .day.hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NSCalendar.Default .day[aria-selected=true],
+.NSCalendar.Default .day.selected {
+    border: var(--selection-border);
+    background-color: var(--selection-background);
+    color: var(--selection-foreground);
+}
+
+.NSCalendar.Default .day.rangeChangeMode {
+    color: #ffffff;
+    background-color: #808000;
+}
+
+.NSCalendar.Default .day.rangeAddMode {
+    border: 1px solid #808000;
+    color: var(--selection-foreground);
+    background-color: var(--selection-background);
+}
+
+.NSCalendar.Default .day.rangeRemoveMode {
+    border: 1px solid #808000;
+}
+
+.NSComboBox.Default {
+    border: var(--field-border);
+    box-shadow: var(--shadow);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 2px 15px 2px 5px;
+    background-image: var(--comboboxChevron);
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+    color: var(--field-foreground);
+    appearance: none;
+    background-color: var(--field-background);
+    width: 205px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-style: normal;
+    text-decoration: none;
+    height: var(--field-height);
+    border-radius: var(--field-border-radius);
+    font-weight: var(--field-weight);
+}
+
+.NSComboBox.Default:hover,
+.NSComboBox.Default.hover {
+    background-color: var(--field-rollover-background);
+    color: var(--field-rollover-foreground);
+    border: var(--field-rollover-border);
+}
+
+.NSComboBox.Default:focus {
+    box-shadow: var(--focused-shadow-1), var(--focused-shadow-2);
+    outline: 0;
+    border: var(--focused-border);
+}
+
+.NSComboBox.Default[aria-invalid=true]:not([aria-readonly=true]) {
+    color: var(--invalid-foreground);
+    border: var(--invalid-border);
+    background-image: var(--comboboxChevron-invalid);
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+}
+
+.NSComboBox.Default:disabled,
+.NSComboBox.Default[aria-disabled=true],
+.NSComboBox.Default.disabled {
+    background-image: var(--comboboxChevron-disabled);
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+    color: var(--disabled-foreground);
+    background-color: var(--darker-light);
+}
+
+.NSComboBox.edition {
+    border: var(--no-border);
+    box-shadow: var(--shadow);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 2px 15px 2px 5px;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/resources/pics/chevrons/down-black.png);
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+    color: var(--field-foreground);
+    appearance: none;
+    border-radius: var(--field-border-radius);
+    background-color: var(--field-background);
+    width: 100%;
+    height: 100%;
+}
+
+.NSComboBox.edition:focus {
+    box-shadow: var(--focused-shadow-1), var(--focused-shadow-2);
+    outline: 0;
+    border: var(--no-border);
+}
+
+.NSComboBox.edition[aria-invalid=true]:not([aria-readonly=true]) {
+    color: var(--invalid-foreground);
+    border: var(--no-border);
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/resources/pics/chevrons/down-red.png);
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+}
+
+.NSComboBox.edition:hover,
+.NSComboBox.edition.hover {
+    background-color: var(--field-rollover-background);
+    color: var(--field-rollover-foreground);
+    border: var(--field-rollover-border);
+}
+
+.NSComboBox.edition:disabled,
+.NSComboBox.edition[aria-disabled=true],
+.NSComboBox.edition.disabled {
+    border: var(--no-border);
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/resources/pics/chevrons/down-grey.png);
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+    color: var(--disabled-foreground);
+    background-color: var(--darker-light);
+}
+
+.NSInfoBox.Default {
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    width: 200px;
+    text-decoration: none;
+}
+
+.NSInfoBox.Default > .bd > div {
+    color: #666666;
+    background-color: #ffffff;
+    font-size: var(--font-size);
+    font-style: italic;
+    padding: 10px 10px 10px 10px;
+}
+
+.NSInfoBox.Default > .hd {
+    color: var(--field-foreground);
+    padding: 5px 10px 5px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+    border: var(--border);
+    background-color: var(--bg-infobox);
+}
+
+.NSLabel.Default {
+    color: var(--label-color);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+}
+
+.NSLabel.Default:disabled,
+.NSLabel.Default[aria-disabled=true],
+.NSLabel.Default.disabled {
+    color: var(--disabled-foreground);
+}
+
+.NSLink.Default {
+    color: #4e7dbf;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.NSLink.Default:hover,
+.NSLink.Default.hover {
+    color: #ff8800;
+}
+
+.NSLink.Default:disabled,
+.NSLink.Default[aria-disabled=true],
+.NSLink.Default.disabled {
+    color: var(--disabled-foreground);
+}
+
+.NSHeading.Default {
+    color: var(--heading-foreground);
+    font-family: var(--font-stack);
+    font-size: 64px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1.NSHeading.Default {
+    color: var(--white);
+}
+
+h2.NSHeading.Default {
+    font-family: var(--font-stack);
+    /*
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+*/
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h3.NSHeading.Default {
+    font-family: var(--font-stack);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h4.NSHeading.Default {
+    font-family: var(--font-stack);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h5.NSHeading.Default {
+    font-family: var(--font-stack);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h6.NSHeading.Default {
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSMediaObject.Default {
+    width: 200px;
+    height: 150px;
+}
+
+.NSImage.Default {
+}
+
+.NSListBox.Default {
+    border: var(--border);
+    border-radius: var(--field-border-radius);
+    background-color: #fefefe;
+    width: 200px;
+    color: var(--field-foreground);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: var(--field-weight);
+    font-style: normal;
+    text-decoration: none;
+    height: var(--field-height);
+}
+
+.NSListBox.Default:disabled,
+.NSListBox.Default[aria-disabled=true],
+.NSListBox.Default.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSGridView.Default {
+    border: var(--border);
+    background-color: #ffffff;
+    width: 200px;
+    color: var(--field-foreground);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    height: 150px;
+}
+
+.NSGridView.Default .table-cell .table-cell {
+    padding: var(--cell-insets);
+}
+
+.NSGridView.Default[aria-selected=true],
+.NSGridView.Default.selected {
+    background-color: var(--selection-background) !important;
+    color: var(--selection-foreground) !important;
+}
+
+.NSListView.Default {
+    border: var(--border);
+    color: var(--field-foreground);
+    --filter-active-icon: "!I!/fr/natsystem/resources/pics/filter/filter-black.png";
+    background-color: #ffffff;
+    width: 200px;
+    --filter-icon: "!I!/fr/natsystem/resources/pics/filter/filter-darkgrey.png";
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+    height: 150px;
+}
+
+.NSListView.Default > .hd,
+.NSListView.Default > .corner {
+    background-image: var(--list-background-image);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    color: var(--header-foreground);
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--header-background);
+    border: var(--listBorder);
+    border-style: var(--listBorderStyle);
+}
+
+.NSListView.Default .table-cell > div {
+    padding: var(--cell-insets);
+}
+
+.NSListView.Default .bd .table-cell {
+    border: var(--cell-border);
+}
+
+.NSListView.Default .bd .table-row:hover > td,
+.NSListView.Default .col .table-row:hover > td,
+.NSListView.Default .bd .table-row.hover > td,
+.NSListView.Default .col .table-row.hover > td {
+    background-color: var(--list-rollover-background) !important;
+    color: var(--list-rollover-foreground);
+}
+
+.NSListView.Default .bd .table-row[aria-selected=true] > td,
+.NSListView.Default .col .table-row[aria-selected=true] > td,
+.NSListView.Default .bd .table-row.selected > td,
+.NSListView.Default .col .table-row.selected > td {
+    background-color: var(--list-selection-background) !important;
+    color: var(--list-selection-foreground);
+}
+
+.NSListView.Default .bd tr:nth-child(even) {
+    background-color: var(--even-list-bg-color);
+}
+
+.NSListView.Default .bd tr:nth-child(odd) {
+    background-color: var(--odd-list-bg-color);
+}
+
+.NSListView.Default .hd {
+    border-bottom: 5px solid white;
+}
+
+.NSTreeView.Default {
+    border: var(--border);
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    --collapsed-icon: "!I!/fr/natsystem/resources/pics/tree/closed.png";
+    --expanded-icon: "!I!/fr/natsystem/resources/pics/tree/opened.png";
+    background-color: #ffffff;
+    width: 200px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    height: 150px;
+}
+
+.NSTreeView.Default .outline-table-cell {
+    padding: var(--cell-insets);
+}
+
+.NSTreeView.Default > .hd,
+.NSTreeView.Default > .corner {
+    color: var(--header-foreground);
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--header-background);
+}
+
+.NSTreeView.Default .table-cell > div {
+    padding: var(--cell-insets);
+}
+
+.NSTreeView.Default .bd .table-cell {
+    border: var(--cell-border);
+}
+
+.NSTreeView.Default .bd .table-row:hover > td,
+.NSTreeView.Default .col .table-row:hover > td,
+.NSTreeView.Default .bd .table-row.hover > td,
+.NSTreeView.Default .col .table-row.hover > td {
+    background-color: var(--list-rollover-background) !important;
+    color: var(--list-rollover-foreground);
+}
+
+.NSTreeView.Default .bd .table-row[aria-selected=true] > td,
+.NSTreeView.Default .col .table-row[aria-selected=true] > td,
+.NSTreeView.Default .bd .table-row.selected > td,
+.NSTreeView.Default .col .table-row.selected > td {
+    background-color: var(--list-selection-background) !important;
+    color: var(--list-selection-foreground);
+}
+
+.NSAccordionPane.Default {
+    border: var(--border);
+    color: var(--field-foreground);
+    background-color: #ffffff;
+    width: 400px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+    height: 300px;
+}
+
+.NSAccordionPane.Default > [role=tab] {
+    background-color: #f4f4f4;
+    padding: 10px 10px 10px 10px;
+    border-top: 1px solid var(--darker-light);
+    border-right: var(--no-border);
+    border-bottom: 1px solid var(--darker-light);
+    border-left: var(--no-border);
+    color: var(--field-foreground);
+}
+
+.NSAccordionPane.Default > [role=tab]:hover,
+.NSAccordionPane.Default > [role=tab].hover {
+    background-color: #fafafa;
+}
+
+.NSAccordionPane.Default > [role=tab][aria-selected=true] {
+    background-color: var(--selection-background);
+    color: #ffffff;
+}
+
+.NSTabbedPane.Default {
+    width: 300px;
+    height: 300px;
+}
+
+.NSTabbedPane.Default > .hd [role=tab] > div {
+    inset: 0px;
+    padding: var(--tab-padding);
+    border-radius: var(--tabbed-border-radius);
+    font-family: var(--tab-font-stack);
+    font-size: var(--tab-font-size);
+    font-weight: var(--tab-font-weight);
+    text-decoration: none;
+    margin: var(--tab-margin);
+}
+
+.NSTabbedPane.Default > .hd [role=tab][aria-selected=false] > div {
+    padding: var(--tab-padding-vertical) var(--tab-padding-horizontal);
+    color: var(--field-foreground);
+    background-image: var(--tab-background-image);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-color: var(--tab-background-color);
+    border-top: var(--border);
+    border-left: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border-bottom);
+}
+
+.NSTabbedPane.Default > .hd [role=tab] > div:hover,
+.NSTabbedPane.Default > .hd [role=tab] > div.hover {
+    color: var(--opposite-primary-color);
+    background-color: var(--primary-color-hover);
+}
+
+.NSTabbedPane.Default > .hd [role=tab][aria-selected=true] > div {
+    background-color: var(--selected-tab-background);
+    color: var(--selected-tab-foreground);
+    padding: var(--tab-padding-vertical) var(--tab-padding-horizontal);
+    background-image: var(--tab-selected-background-image);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    border-top: var(--border);
+    border-left: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border-bottom);
+}
+
+.NSTabbedPane.Default > .hd [role=tab]:disabled > div,
+.NSTabbedPane.Default > .hd [role=tab][aria-disabled=true] > div,
+.NSTabbedPane.Default > .hd [role=tab].disabled > div {
+    background-color: var(--disabled-background);
+    color: var(--disabled-foreground);
+    border: var(--disabled-border);
+}
+
+.NSTabbedPane.Default > .bd {
+    border: var(--border);
+    color: var(--field-foreground);
+    background-color: #ffffff;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+}
+
+.NSContainer.Default {
+    border-radius: var(--border-radius);
+    background-color: #eeeeee;
+    width: 200px;
+    height: 150px;
+}
+
+.NSContentPane.Default {
+    background-color: var(--bg);
+    color: var(--field-foreground);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSFlowContainer.Default {
+    width: 600px;
+    height: 400px;
+}
+
+.NSGroupBox.Default {
+    border: var(--border);
+    width: 200px;
+    color: var(--field-foreground);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    height: 150px;
+}
+
+.NSGroupBox.Default > .hd {
+    padding: 5px 10px 5px 10px;
+    border: var(--border);
+    background-color: var(--bg);
+}
+
+.NSSplitLayout.Default {
+}
+
+.NSSplitLayout.Default > [role='separator'][aria-orientation=vertical] {
+}
+
+.NSSplitLayout.Default > [role='separator'][aria-orientation=horizontal] {
+}
+
+.NSSplitLayout.Default > [role='separator'] {
+    background-color: var(--border-color);
+}
+
+.NSBorderLayout.Default {
+}
+
+.NSBorderLayout.Default > .central > [role='separator'] {
+    background-color: var(--border-color);
+}
+
+.NSBorderLayout.Default > [role='separator'] {
+    background-color: var(--border-color);
+}
+
+.NSTemplate.Default {
+    background-color: var(--transparent);
+    width: 200px;
+    height: 150px;
+}
+
+.NSCustomComponent.Default {
+}
+
+.NSMessageDialog.Default {
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+    min-width: 350px;
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    background-color: var(--background-popup);
+    max-width: 60%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Default > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Default > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--field-foreground);
+}
+
+.NSMessageDialog.Default > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSRichTextArea.Default {
+    border: var(--border);
+    background-color: #ffffff;
+    padding: 5px 5px 5px 5px;
+    width: 200px;
+    color: var(--field-foreground);
+    height: 150px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSRuler.Default {
+    --width: 100px;
+    --color: #999999;
+    --height: 1px;
+}
+
+.NSSlider.Default > .rail {
+    border: var(--border);
+    background-color: var(--white);
+    width: 200px;
+}
+
+.NSSlider.Default > .handler {
+    width: 20px;
+    background-color: var(--progression-color);
+    height: 20px;
+    box-shadow: var(--shadow-soft);
+    border-radius: 50%;
+}
+
+.NSSlider.Default > .handler:disabled,
+.NSSlider.Default > .handler[aria-disabled=true],
+.NSSlider.Default > .handler.disabled > .handler {
+    background-color: var(--disabled-background);
+}
+
+.NSSlider.Default > .handler:disabled,
+.NSSlider.Default > .handler[aria-disabled=true],
+.NSSlider.Default > .handler.disabled > .rail {
+    background-color: var(--disabled-background);
+}
+
+.NSToolbar.Default {
+    color: var(--field-foreground);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSWebBrowser.Default {
+    border: var(--border);
+    background-color: var(--white);
+    width: 200px;
+    height: 150px;
+}
+
+.NSWindowPane.Default {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    background-color: var(--white);
+    color: var(--field-foreground);
+}
+
+.NSWindowPane.Default > .hd {
+    padding: 15px 10px 15px 10px;
+    color: var(--white);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    background-color: var(--background-popup);
+}
+
+.NSPushButton.Button {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.Button[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Button[data-type=label]:hover,
+.NSPushButton.Button[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Button[data-type=label]:disabled,
+.NSPushButton.Button[data-type=label][aria-disabled=true],
+.NSPushButton.Button[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Button[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.Button[data-type=url]:hover,
+.NSPushButton.Button[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Button:hover,
+.NSPushButton.Button.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.Button[data-type=url]:disabled,
+.NSPushButton.Button[data-type=url][aria-disabled=true],
+.NSPushButton.Button[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+
+.NSPushButton.Button:disabled,
+.NSPushButton.Button[aria-disabled=true],
+.NSPushButton.Button.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.Label {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.Label[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Label[data-type=label]:hover,
+.NSPushButton.Label[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Label[data-type=label]:disabled,
+.NSPushButton.Label[data-type=label][aria-disabled=true],
+.NSPushButton.Label[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Label[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.Label[data-type=url]:hover,
+.NSPushButton.Label[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Label:hover,
+.NSPushButton.Label.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.Label[data-type=url]:disabled,
+.NSPushButton.Label[data-type=url][aria-disabled=true],
+.NSPushButton.Label[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+
+.NSPushButton.Label:disabled,
+.NSPushButton.Label[aria-disabled=true],
+.NSPushButton.Label.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.Url {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.Url[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Url[data-type=label]:hover,
+.NSPushButton.Url[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Url[data-type=label]:disabled,
+.NSPushButton.Url[data-type=label][aria-disabled=true],
+.NSPushButton.Url[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Url[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.Url[data-type=url]:hover,
+.NSPushButton.Url[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Url:hover,
+.NSPushButton.Url.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.Url[data-type=url]:disabled,
+.NSPushButton.Url[data-type=url][aria-disabled=true],
+.NSPushButton.Url[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.Url:disabled,
+.NSPushButton.Url[aria-disabled=true],
+.NSPushButton.Url.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.UrlNoUnderline {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.UrlNoUnderline[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.UrlNoUnderline[data-type=label]:hover,
+.NSPushButton.UrlNoUnderline[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.UrlNoUnderline[data-type=label]:disabled,
+.NSPushButton.UrlNoUnderline[data-type=label][aria-disabled=true],
+.NSPushButton.UrlNoUnderline[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.UrlNoUnderline[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.UrlNoUnderline[data-type=url]:hover,
+.NSPushButton.UrlNoUnderline[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.UrlNoUnderline[data-type=url]:disabled,
+.NSPushButton.UrlNoUnderline[data-type=url][aria-disabled=true],
+.NSPushButton.UrlNoUnderline[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.UrlNoUnderline:hover,
+.NSPushButton.UrlNoUnderline.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.UrlNoUnderline:disabled,
+.NSPushButton.UrlNoUnderline[aria-disabled=true],
+.NSPushButton.UrlNoUnderline.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSContentPane.margin {
+    padding: 20px 20px 20px 20px;
+    background-color: var(--white-grey);
+    color: var(--field-foreground);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSContentPane.Transparent {
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSContentPane.Control {
+}
+
+.NSMessageDialog.Emergency {
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/error.png";
+    min-width: 350px;
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    max-width: 60%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Emergency > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Emergency > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #600000;
+}
+
+.NSMessageDialog.Emergency > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Alert {
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/error.png";
+    min-width: 350px;
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    max-width: 60%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Alert > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Alert > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #800000;
+}
+
+.NSMessageDialog.Alert > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Critical {
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/error.png";
+    min-width: 350px;
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    max-width: 60%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Critical > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Critical > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #a00000;
+}
+
+.NSMessageDialog.Critical > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Error {
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/error.png";
+    min-width: 350px;
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    max-width: 60%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Error > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Error > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #a00000;
+}
+
+.NSMessageDialog.Error > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Warning {
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/warning.png";
+    min-width: 350px;
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    max-width: 60%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Warning > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Warning > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #f68b01;
+}
+
+.NSMessageDialog.Warning > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Notice {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    min-width: 350px;
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    max-width: 60%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Notice > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Notice > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #29778d;
+}
+
+.NSMessageDialog.Notice > .bd {
+    padding: 20px 20px 0px 20px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Informational {
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/information.png";
+    min-width: 350px;
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    max-width: 60%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Informational > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Informational > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #29778d;
+}
+
+.NSMessageDialog.Informational > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Debug {
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/information.png";
+    min-width: 350px;
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    max-width: 60%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Debug > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Debug > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4392ac;
+}
+
+.NSMessageDialog.Debug > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Success {
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/success.png";
+    min-width: 350px;
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    max-width: 60%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Success > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Success > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #7fae00;
+}
+
+.NSMessageDialog.Success > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Question {
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/question.png";
+    min-width: 350px;
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    max-width: 60%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Question > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Question > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #00a6fc;
+}
+
+.NSMessageDialog.Question > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Custom {
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+    min-width: 350px;
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    max-width: 60%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Custom > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Custom > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #8a8a8a;
+}
+
+.NSMessageDialog.Custom > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Progress {
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+    min-width: 350px;
+    color: var(--field-foreground);
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    max-width: 60%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Progress > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Progress .progressbar {
+    width: 100%;
+    border: 0px solid #eeeeee;
+    background-color: #eeeeee;
+}
+
+.NSMessageDialog.Progress > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #8a8a8a;
+}
+
+.NSMessageDialog.Progress .progressbar > .value {
+    background-color: #0064b4;
+}
+
+.NSMessageDialog.Progress > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.MessageDialog-Button {
+    border: var(--button-border);
+    padding: 5px 20px 5px 20px;
+    color: var(--field-foreground);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    text-align: center;
+    text-shadow: 1px 1px #ffffff;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 20px;
+}
+
+.NSPushButton.MessageDialog-Button:hover,
+.NSPushButton.MessageDialog-Button.hover {
+    border: 1px solid #222222;
+}
+
+.NSPushButton.MessageDialog-Button:focus {
+    border: 1px solid #222222;
+}
+
+.NSPushButton.MessageDialog-Button:disabled,
+.NSPushButton.MessageDialog-Button[aria-disabled=true],
+.NSPushButton.MessageDialog-Button.disabled {
+    color: var(--disabled-foreground);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NSPushButton.MessageDialog-Affirmative {
+    border: var(--button-border);
+    padding: 5px 20px 5px 20px;
+    color: var(--field-foreground);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    text-align: center;
+    text-shadow: 1px 1px #ffffff;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 20px;
+}
+
+.NSPushButton.MessageDialog-Affirmative:hover,
+.NSPushButton.MessageDialog-Affirmative.hover {
+    border: 1px solid #222222;
+}
+
+.NSPushButton.MessageDialog-Affirmative:focus {
+    border: 1px solid #222222;
+}
+
+.NSPushButton.MessageDialog-Affirmative:disabled,
+.NSPushButton.MessageDialog-Affirmative[aria-disabled=true],
+.NSPushButton.MessageDialog-Affirmative.disabled {
+    color: var(--disabled-foreground);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NSPushButton.MessageDialog-Alternate {
+    border: var(--button-border);
+    padding: 5px 20px 5px 20px;
+    color: var(--field-foreground);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    text-align: center;
+    text-shadow: 1px 1px #ffffff;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 20px;
+}
+
+.NSPushButton.MessageDialog-Alternate:hover,
+.NSPushButton.MessageDialog-Alternate.hover {
+    border: 1px solid #222222;
+}
+
+.NSPushButton.MessageDialog-Alternate:focus {
+    border: 1px solid #222222;
+}
+
+.NSPushButton.MessageDialog-Alternate:disabled,
+.NSPushButton.MessageDialog-Alternate[aria-disabled=true],
+.NSPushButton.MessageDialog-Alternate.disabled {
+    color: var(--disabled-foreground);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NSPushButton.MessageDialog-Cancel {
+    border: var(--button-border);
+    padding: 5px 20px 5px 20px;
+    color: var(--field-foreground);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    text-align: center;
+    text-shadow: 1px 1px #ffffff;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 20px;
+}
+
+.NSPushButton.MessageDialog-Cancel:hover,
+.NSPushButton.MessageDialog-Cancel.hover {
+    border: 1px solid #222222;
+}
+
+.NSPushButton.MessageDialog-Cancel:focus {
+    border: 1px solid #222222;
+}
+
+.NSPushButton.MessageDialog-Cancel:disabled,
+.NSPushButton.MessageDialog-Cancel[aria-disabled=true],
+.NSPushButton.MessageDialog-Cancel.disabled {
+    color: var(--disabled-foreground);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NSPushButton.MessageDialog-Close {
+    border: var(--button-border);
+    padding: 5px 20px 5px 20px;
+    color: var(--field-foreground);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    text-align: center;
+    text-shadow: 1px 1px #ffffff;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 20px;
+}
+
+.NSPushButton.MessageDialog-Close:hover,
+.NSPushButton.MessageDialog-Close.hover {
+    border: 1px solid #222222;
+}
+
+.NSPushButton.MessageDialog-Close:focus {
+    border: 1px solid #222222;
+}
+
+.NSPushButton.MessageDialog-Close:disabled,
+.NSPushButton.MessageDialog-Close[aria-disabled=true],
+.NSPushButton.MessageDialog-Close.disabled {
+    color: var(--disabled-foreground);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NSPushButton.MessageDialog-Custom {
+    border: var(--button-border);
+    padding: 5px 20px 5px 20px;
+    color: var(--field-foreground);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    text-align: center;
+    text-shadow: 1px 1px #ffffff;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 20px;
+}
+
+.NSPushButton.MessageDialog-Custom:hover,
+.NSPushButton.MessageDialog-Custom.hover {
+    border: 1px solid #222222;
+}
+
+.NSPushButton.MessageDialog-Custom:focus {
+    border: 1px solid #222222;
+}
+
+.NSPushButton.MessageDialog-Custom:disabled,
+.NSPushButton.MessageDialog-Custom[aria-disabled=true],
+.NSPushButton.MessageDialog-Custom.disabled {
+    color: var(--disabled-foreground);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NSToolbar.Wide {
+    color: var(--field-foreground);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSLabel.InListView {
+}
+
+.NSPushButton.InListView {
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.NSPushButton.InListView[data-type=label] {
+    text-align: left;
+}
+
+.NSPushButton.InListView[data-type=url] {
+    text-align: left;
+    border: var(--no-border);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: var(--transparent);
+}
+
+.NSTemplate.InListView {
+}
+
+.NSImage.InListView {
+}
+
+.NSCheckBox.InListView {
+}
+
+.NSCheckBox.InListView > .text-icon > .content-state {
+    margin-right: 0px;
+}
+
+.NSLabel.InTreeView {
+}
+
+.NSPushButton.InTreeView {
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.NSPushButton.InTreeView[data-type=label] {
+    text-align: left;
+}
+
+.NSPushButton.InTreeView[data-type=url] {
+    text-align: left;
+    border: var(--no-border);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: var(--transparent);
+}
+
+.NSTemplate.InTreeView {
+}
+
+.NSImage.InTreeView {
+}
+
+.NSCheckBox.InTreeView {
+}
+
+.NSCheckBox.InTreeView > .text-icon > .content-state {
+    margin-right: 0px;
+}
+
+.NSPushButton.InGridView {
+    border: var(--no-border);
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.NSContentPane.header {
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSContentPane.main {
+    color: var(--field-foreground);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+}
+
+.NSLabel.log {
+    color: #777777;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSLabel.del {
+    color: var(--field-foreground);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: line-through;
+}
+
+.NSLabel.del:disabled,
+.NSLabel.del[aria-disabled=true],
+.NSLabel.del.disabled {
+    color: #999999;
+}
+
+.NSPushButton.splash {
+    border: 0px solid #dddddd;
+    background-color: #dddddd;
+    width: 450px;
+    color: #909090;
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 48px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 100px;
+}
+
+.NSPushButton.splash:hover,
+.NSPushButton.splash.hover {
+    background-color: #f0f6fa;
+    color: #000000;
+}
+
+.NSPushButton.splash:disabled,
+.NSPushButton.splash[aria-disabled=true],
+.NSPushButton.splash.disabled {
+    color: #9999aa;
+}
+
+.NSLabel.splash {
+    color: #909090;
+    font-family: var(--font-stack);
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSTabbedPane.buttons {
+    width: 300px;
+    height: 250px;
+}
+
+.NSTabbedPane.buttons > .hd [role=tab] > div {
+    padding: 5px 15px 5px 15px;
+    border-radius: var(--border-radius);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 0 0 1px;
+}
+
+.NSTabbedPane.buttons > .hd [role=tab][aria-selected=false] > div {
+    color: var(--field-foreground);
+    background-color: #dddddd;
+}
+
+.NSTabbedPane.buttons > .hd [role=tab] > div:hover,
+.NSTabbedPane.buttons > .hd [role=tab] > div.hover {
+    background-color: #cccccc;
+}
+
+.NSTabbedPane.buttons > .hd [role=tab][aria-selected=true] > div {
+    background-color: #8a8a8a;
+    color: #ffffff;
+    background-image: url(?sid=Echo.Image&iid=/fr/natsystem/themes/elementary/pics/bg-gradient.png);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+}
+
+.NSTabbedPane.buttons > .hd [role=tab]:disabled > div,
+.NSTabbedPane.buttons > .hd [role=tab][aria-disabled=true] > div,
+.NSTabbedPane.buttons > .hd [role=tab].disabled > div {
+    background-color: #dddddd;
+    color: #aaaaaa;
+}
+
+.NSTabbedPane.buttons > .bd {
+    color: var(--field-foreground);
+    background-color: #f5f5f5;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+}
+
+.NSTabbedPane.extended {
+    --tabs-extended: true;
+    width: 300px;
+    height: 300px;
+}
+
+.NSTabbedPane.extended > .hd [role=tab] > div {
+    border-radius: 3px 3px 0px 0px;
+    margin: 0 0 0 2px;
+}
+
+.NSTabbedPane.extended > .hd [role=tab][aria-selected=false] > div {
+    padding: 10px 15px 10px 15px;
+    color: var(--field-foreground);
+    background-color: #f4f4f4;
+    border: var(--border);
+}
+
+.NSTabbedPane.extended > .hd [role=tab] > div:hover,
+.NSTabbedPane.extended > .hd [role=tab] > div.hover {
+    color: var(--opposite-primary-color);
+    background-color: var(--primary-color-hover);
+}
+
+.NSTabbedPane.extended > .hd [role=tab][aria-selected=true] > div {
+    background-color: var(--selection-background);
+    color: var(--selection-foreground);
+    padding: 10px 15px 10px 15px;
+    border: var(--selection-border);
+}
+
+.NSTabbedPane.extended > .hd [role=tab]:disabled > div,
+.NSTabbedPane.extended > .hd [role=tab][aria-disabled=true] > div,
+.NSTabbedPane.extended > .hd [role=tab].disabled > div {
+    background-color: var(--disabled-background);
+    color: var(--disabled-foreground);
+    border: var(--disabled-border);
+}
+
+.NSTabbedPane.extended > .bd {
+    border: var(--border);
+    color: var(--field-foreground);
+    background-color: #ffffff;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+}
+
+.NSContentPane.navigation {
+    background-color: var(--white);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSBulletList.navigation {
+    border-top: var(--border);
+    border-right: var(--no-border);
+    border-bottom: var(--no-border);
+    border-left: var(--no-border);
+    background-color: var(--white);
+    color: var(--black-grey);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+}
+
+.NSToolbar.tabNavigation {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: var(--field-foreground);
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    text-decoration: none;
+}
+
+.NSPushButton.tabNavigation {
+    border-top: 1px solid #333333;
+    border-right: 0px solid #333333;
+    border-bottom: 0px solid #333333;
+    border-left: 1px solid #333333;
+    padding: 0px 20px 0px 20px;
+    color: #eeeeee;
+    transition: background 0.1s, color 0.1s;
+    border-radius: var(--button-border-radius);
+    background-color: var(--transparent);
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    text-decoration: none;
+    height: 40px;
+}
+
+.NSPushButton.tabNavigation:hover,
+.NSPushButton.tabNavigation.hover {
+    background-color: var(--lighter-mid);
+    color: var(--field-foreground);
+}
+
+.NSPushButton.tabNavigation:focus {
+    background-color: var(--lighter-mid);
+    color: var(--field-foreground);
+}
+
+.NSPushButton.tabNavigation:disabled,
+.NSPushButton.tabNavigation[aria-disabled=true],
+.NSPushButton.tabNavigation.disabled {
+    color: #111111;
+    background-color: #fcfcfc;
+}
+
+.NSPushButton.tabNavigationSelected {
+    border-top: 1px solid #333333;
+    border-right: 0px solid #333333;
+    border-bottom: 0px solid #333333;
+    border-left: 1px solid #333333;
+    padding: 0px 20px 0px 20px;
+    color: #ffffff;
+    transition: background 0.1s, color 0.1s;
+    border-radius: var(--button-border-radius);
+    background-color: var(--selection-background);
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: bold;
+    text-decoration: none;
+    height: 40px;
+}
+
+.NSPushButton.tabNavigationSelected:hover,
+.NSPushButton.tabNavigationSelected.hover {
+    background-color: var(--lighter-mid);
+    color: var(--field-foreground);
+}
+
+.NSPushButton.tabNavigationSelected:focus {
+    background-color: var(--lighter-mid);
+    color: var(--field-foreground);
+}
+
+.NSPushButton.tabNavigationSelected:disabled,
+.NSPushButton.tabNavigationSelected[aria-disabled=true],
+.NSPushButton.tabNavigationSelected.disabled {
+    color: #111111;
+    background-color: #fcfcfc;
+}
+
+.NSPushButton.linkNavigationLabel {
+    border: var(--no-border);
+    padding: 10px 10px 10px 10px;
+    color: #111111;
+    border-radius: 0px;
+    background-color: var(--darker-light);
+    width: 100%;
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.linkNavigationLabel[data-type=label] {
+    padding: 10px 10px 10px 10px;
+}
+
+.NSPushButton.linkNavigationLabel[data-type=url] {
+    padding: 10px 10px 10px 10px;
+}
+
+.NSPushButton.linkNavigationLabel:hover,
+.NSPushButton.linkNavigationLabel.hover {
+    color: #111111;
+}
+
+.NSPushButton.linkNavigationLabel:disabled,
+.NSPushButton.linkNavigationLabel[aria-disabled=true],
+.NSPushButton.linkNavigationLabel.disabled {
+    color: #111111;
+    background-color: var(--darker-light);
+}
+
+.NSPushButton.linkNavigationLabelSelected {
+    border: var(--no-border);
+    padding: 10px 10px 10px 10px;
+    color: #111111;
+    border-radius: 0px;
+    background-color: var(--darker-light);
+    width: 100%;
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.linkNavigationLabelSelected[data-type=label] {
+    padding: 10px 10px 10px 10px;
+}
+
+.NSPushButton.linkNavigationLabelSelected[data-type=url] {
+    padding: 10px 10px 10px 10px;
+}
+
+.NSPushButton.linkNavigationLabelSelected:hover,
+.NSPushButton.linkNavigationLabelSelected.hover {
+    color: #111111;
+}
+
+.NSPushButton.linkNavigationLabelSelected:disabled,
+.NSPushButton.linkNavigationLabelSelected[aria-disabled=true],
+.NSPushButton.linkNavigationLabelSelected.disabled {
+    color: #111111;
+    background-color: var(--darker-light);
+}
+
+.NSPushButton.linkNavigation {
+    border-top: var(--no-border);
+    border-right: var(--no-border);
+    border-bottom: var(--button-border);
+    border-left: var(--no-border);
+    padding: 10px 20px 10px 20px;
+    color: var(--black-grey);
+    transition: background 0.1s, color 0.1s;
+    border-radius: 0px;
+    background-color: var(--transparent);
+    width: 100%;
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.linkNavigation .content-icon > img {
+    height: 21px;
+}
+
+.NSPushButton.linkNavigation[data-type=label] {
+    padding: 10px 20px 10px 20px;
+}
+
+.NSPushButton.linkNavigation[data-type=url] {
+    padding: 10px 20px 10px 20px;
+}
+
+.NSPushButton.linkNavigation:hover,
+.NSPushButton.linkNavigation.hover {
+    background-color: var(--darker-soft);
+    color: var(--field-foreground);
+}
+
+.NSPushButton.linkNavigation:focus {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+.NSPushButton.linkNavigation:disabled,
+.NSPushButton.linkNavigation[aria-disabled=true],
+.NSPushButton.linkNavigation.disabled {
+    color: #ffffff;
+    background-color: var(--selection-background);
+}
+
+.NSPushButton.linkNavigationSelected {
+    border-top: var(--no-border);
+    border-right: var(--no-border);
+    border-bottom: var(--button-border);
+    border-left: var(--no-border);
+    padding: 10px 20px 10px 20px;
+    color: #ffffff;
+    transition: background 0.1s, color 0.1s;
+    border-radius: 0px;
+    background-color: var(--selection-background);
+    width: 100%;
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.linkNavigationSelected .content-icon > img {
+    height: 21px;
+}
+
+.NSPushButton.linkNavigationSelected[data-type=label] {
+    padding: 10px 20px 10px 20px;
+    color: #ffffff;
+    background-color: var(--selection-background);
+}
+
+.NSPushButton.linkNavigationSelected[data-type=url] {
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+    background-color: var(--selection-background);
+}
+
+.NSPushButton.linkNavigationSelected:hover,
+.NSPushButton.linkNavigationSelected.hover {
+    background-color: var(--selection-background);
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+.NSPushButton.linkNavigationSelected:focus {
+    background-color: var(--selection-background);
+    color: #ffffff;
+}
+
+.NSPushButton.linkNavigationSelected:disabled,
+.NSPushButton.linkNavigationSelected[aria-disabled=true],
+.NSPushButton.linkNavigationSelected.disabled {
+    color: #ffffff;
+    background-color: var(--selection-background);
+}
+
+.NSPushButton.back {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/back-black.png";
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/back-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.back[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.back[data-type=label]:hover,
+.NSPushButton.back[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.back[data-type=label]:disabled,
+.NSPushButton.back[data-type=label][aria-disabled=true],
+.NSPushButton.back[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.back[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.back[data-type=url]:hover,
+.NSPushButton.back[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.back[data-type=url]:disabled,
+.NSPushButton.back[data-type=url][aria-disabled=true],
+.NSPushButton.back[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.back:hover,
+.NSPushButton.back.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.back:disabled,
+.NSPushButton.back[aria-disabled=true],
+.NSPushButton.back.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.close {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/cross-black.png";
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/cross-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.close[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.close[data-type=label]:hover,
+.NSPushButton.close[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.close[data-type=label]:disabled,
+.NSPushButton.close[data-type=label][aria-disabled=true],
+.NSPushButton.close[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.close[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.close[data-type=url]:hover,
+.NSPushButton.close[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.close[data-type=url]:disabled,
+.NSPushButton.close[data-type=url][aria-disabled=true],
+.NSPushButton.close[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.close:hover,
+.NSPushButton.close.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.close:disabled,
+.NSPushButton.close[aria-disabled=true],
+.NSPushButton.close.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.create {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/new-black.png";
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/new-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.create[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.create[data-type=label]:hover,
+.NSPushButton.create[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.create[data-type=label]:disabled,
+.NSPushButton.create[data-type=label][aria-disabled=true],
+.NSPushButton.create[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.create[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.create[data-type=url]:hover,
+.NSPushButton.create[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.create[data-type=url]:disabled,
+.NSPushButton.create[data-type=url][aria-disabled=true],
+.NSPushButton.create[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.create:hover,
+.NSPushButton.create.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.create:disabled,
+.NSPushButton.create[aria-disabled=true],
+.NSPushButton.create.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.delete {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/cross-black.png";
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/cross-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.delete[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.delete[data-type=label]:hover,
+.NSPushButton.delete[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.delete[data-type=label]:disabled,
+.NSPushButton.delete[data-type=label][aria-disabled=true],
+.NSPushButton.delete[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.delete[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.delete[data-type=url]:hover,
+.NSPushButton.delete[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.delete[data-type=url]:disabled,
+.NSPushButton.delete[data-type=url][aria-disabled=true],
+.NSPushButton.delete[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.delete:hover,
+.NSPushButton.delete.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.delete:disabled,
+.NSPushButton.delete[aria-disabled=true],
+.NSPushButton.delete.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.read {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/read-black.png";
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/read-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.read[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.read[data-type=label]:hover,
+.NSPushButton.read[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.read[data-type=label]:disabled,
+.NSPushButton.read[data-type=label][aria-disabled=true],
+.NSPushButton.read[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.read[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.read[data-type=url]:hover,
+.NSPushButton.read[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.read[data-type=url]:disabled,
+.NSPushButton.read[data-type=url][aria-disabled=true],
+.NSPushButton.read[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.read:hover,
+.NSPushButton.read.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.read:disabled,
+.NSPushButton.read[aria-disabled=true],
+.NSPushButton.read.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.update {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/edit-black.png";
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/edit-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.update[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.update[data-type=label]:hover,
+.NSPushButton.update[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.update[data-type=label]:disabled,
+.NSPushButton.update[data-type=label][aria-disabled=true],
+.NSPushButton.update[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.update[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.update[data-type=url]:hover,
+.NSPushButton.update[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.update[data-type=url]:disabled,
+.NSPushButton.update[data-type=url][aria-disabled=true],
+.NSPushButton.update[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.update:hover,
+.NSPushButton.update.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.update:disabled,
+.NSPushButton.update[aria-disabled=true],
+.NSPushButton.update.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.save {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/save-black.png";
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/save-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.save[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.save[data-type=label]:hover,
+.NSPushButton.save[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.save[data-type=label]:disabled,
+.NSPushButton.save[data-type=label][aria-disabled=true],
+.NSPushButton.save[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.save[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.save[data-type=url]:hover,
+.NSPushButton.save[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.save[data-type=url]:disabled,
+.NSPushButton.save[data-type=url][aria-disabled=true],
+.NSPushButton.save[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.save:hover,
+.NSPushButton.save.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.save:disabled,
+.NSPushButton.save[aria-disabled=true],
+.NSPushButton.save.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.search {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/search-black.png";
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/search-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.search[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.search[data-type=label]:hover,
+.NSPushButton.search[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.search[data-type=label]:disabled,
+.NSPushButton.search[data-type=label][aria-disabled=true],
+.NSPushButton.search[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.search[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.search[data-type=url]:hover,
+.NSPushButton.search[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.search[data-type=url]:disabled,
+.NSPushButton.search[data-type=url][aria-disabled=true],
+.NSPushButton.search[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.search:hover,
+.NSPushButton.search.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.search:disabled,
+.NSPushButton.search[aria-disabled=true],
+.NSPushButton.search.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.share {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/share-black.png";
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/share-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.share[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.share[data-type=label]:hover,
+.NSPushButton.share[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.share[data-type=label]:disabled,
+.NSPushButton.share[data-type=label][aria-disabled=true],
+.NSPushButton.share[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.share[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.share[data-type=url]:hover,
+.NSPushButton.share[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.share[data-type=url]:disabled,
+.NSPushButton.share[data-type=url][aria-disabled=true],
+.NSPushButton.share[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.share:hover,
+.NSPushButton.share.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.share:disabled,
+.NSPushButton.share[aria-disabled=true],
+.NSPushButton.share.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.stop {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/stop-black.png";
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/stop-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.stop[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.stop[data-type=label]:hover,
+.NSPushButton.stop[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.stop[data-type=label]:disabled,
+.NSPushButton.stop[data-type=label][aria-disabled=true],
+.NSPushButton.stop[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.stop[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.stop[data-type=url]:hover,
+.NSPushButton.stop[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.stop[data-type=url]:disabled,
+.NSPushButton.stop[data-type=url][aria-disabled=true],
+.NSPushButton.stop[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.stop:hover,
+.NSPushButton.stop.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.stop:disabled,
+.NSPushButton.stop[aria-disabled=true],
+.NSPushButton.stop.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.sync {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/sync-black.png";
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    --disbaled-icon: "!I!/fr/natsystem/resources/pics/actions/sync-grey.png";
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.sync[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.sync[data-type=label]:hover,
+.NSPushButton.sync[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.sync[data-type=label]:disabled,
+.NSPushButton.sync[data-type=label][aria-disabled=true],
+.NSPushButton.sync[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.sync[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.sync[data-type=url]:hover,
+.NSPushButton.sync[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.sync[data-type=url]:disabled,
+.NSPushButton.sync[data-type=url][aria-disabled=true],
+.NSPushButton.sync[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.sync:hover,
+.NSPushButton.sync.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.sync:disabled,
+.NSPushButton.sync[aria-disabled=true],
+.NSPushButton.sync.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.work {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/gear-black.png";
+    color: var(--button-foreground);
+    height: 30px;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-background);
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/gear-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.work[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.work[data-type=label]:hover,
+.NSPushButton.work[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.work[data-type=label]:disabled,
+.NSPushButton.work[data-type=label][aria-disabled=true],
+.NSPushButton.work[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.work[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.work[data-type=url]:hover,
+.NSPushButton.work[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.work[data-type=url]:disabled,
+.NSPushButton.work[data-type=url][aria-disabled=true],
+.NSPushButton.work[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.work:hover,
+.NSPushButton.work.hover {
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color);
+    color: var(--opposite-primary-color);
+}
+
+.NSPushButton.work:disabled,
+.NSPushButton.work[aria-disabled=true],
+.NSPushButton.work.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.validate {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/tick-white.png";
+    color: #ffffff;
+    --rollover-icon: "!I!/fr/natsystem/resources/pics/actions/tick.png";
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    height: 30px;
+    border: 2px solid #55aa55;
+    border-radius: var(--button-border-radius);
+    background-color: #55aa55;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/tick-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.validate[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.validate[data-type=label]:hover,
+.NSPushButton.validate[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.validate[data-type=label]:disabled,
+.NSPushButton.validate[data-type=label][aria-disabled=true],
+.NSPushButton.validate[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.validate[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.validate[data-type=url]:hover,
+.NSPushButton.validate[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.validate[data-type=url]:disabled,
+.NSPushButton.validate[data-type=url][aria-disabled=true],
+.NSPushButton.validate[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.validate:hover,
+.NSPushButton.validate.hover {
+    background-color: #d1f8d1;
+    border: 1px solid #55aa55;
+    color: #55aa55;
+}
+
+.NSPushButton.validate:disabled,
+.NSPushButton.validate[aria-disabled=true],
+.NSPushButton.validate.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+.NSPushButton.cancel {
+    box-shadow: var(--button-shadow);
+    padding: var(--field-insets);
+    --icon: "!I!/fr/natsystem/resources/pics/actions/cross-white.png";
+    color: #ffffff;
+    --rollover-icon: "!I!/fr/natsystem/resources/pics/actions/cross.png";
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    height: 30px;
+    border: 2px solid #e62a2c;
+    border-radius: var(--button-border-radius);
+    background-color: #e62a2c;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/cross-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: var(--font-size);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.cancel[data-type=label] {
+    box-shadow: none;
+    border: var(--no-border);
+    text-align: left;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.cancel[data-type=label]:hover,
+.NSPushButton.cancel[data-type=label].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.cancel[data-type=label]:disabled,
+.NSPushButton.cancel[data-type=label][aria-disabled=true],
+.NSPushButton.cancel[data-type=label].disabled {
+    border: var(--no-border);
+    color: #999999;
+    background-color: var(--transparent);
+}
+
+.NSPushButton.cancel[data-type=url] {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: var(--transparent);
+    text-align: left;
+    border: var(--no-border);
+}
+
+.NSPushButton.cancel[data-type=url]:hover,
+.NSPushButton.cancel[data-type=url].hover {
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.cancel[data-type=url]:disabled,
+.NSPushButton.cancel[data-type=url][aria-disabled=true],
+.NSPushButton.cancel[data-type=url].disabled {
+    color: #999999;
+    border: var(--no-border);
+    background-color: var(--transparent);
+}
+
+.NSPushButton.cancel:hover,
+.NSPushButton.cancel.hover {
+    background-color: #e3bcbc;
+    border: 1px solid #e62a2c;
+    color: #e62a2c;
+}
+
+.NSPushButton.cancel:disabled,
+.NSPushButton.cancel[aria-disabled=true],
+.NSPushButton.cancel.disabled {
+    border: var(--disabled-border);
+    color: var(--disabled-foreground);
+    background-color: var(--disabled-background);
+}
+
+/* Fond de panneau par défaut */
+.PaneBackground.Default {
+    background-color: var(--white-grey);
+}
+
+/* Bordure par défaut sur fond de panneau */
+.BorderedBackground.Default {
+    background-color: var(--white-grey);
+    border: 1px solid var(--border-color);
+}
+
+
+input[type="checkbox" i],
+input[type="radio" i] {
+    margin-left: 10px;
+    accent-color: var(--checkBox-accent-color);
+}
+
+input[type="checkbox" i]:hover,
+input[type="radio" i]:hover {
+    accent-color: var(--checkBox-rollover-accent-color);
+}

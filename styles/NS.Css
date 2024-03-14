@@ -1,0 +1,3545 @@
+/*
+=============
+Natjet styles
+=============
+
+Règles CSS appliquées par défaut aux applications NatJet.
+
+*/
+/*
+:root {
+    --blue: #007ad9;
+}
+*/
+
+
+/*
+
+Règles globales
+===============
+*/
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/* Pour assurer le bon scrolling sur iphone / ipad */
+*:not(html) {
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    scroll-behavior: smooth;
+}
+iframe {
+    padding: 0;
+    border-width: 0;
+    border-style: none;
+    margin: 0;
+    display: block; /* 7427 */
+}
+object {
+    display: block;
+    border-width: 0;
+    width: 100%;
+    height: 100%;
+}
+ul, ol, dl, dt, dd, li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    /* Forcer une image quand src pointe vers un mauvais lien */
+    -moz-force-broken-image-icon: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, th {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+/**
+ * Styles par défaut pour les champs de formulaires
+ */
+input, select, textarea {
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    margin: 0;
+}
+
+input, textarea {
+    border-color: #ccc;
+}
+
+/**
+ * Suppression des marges internes pour harmoniser l'affichage entre IE et FF
+ */
+input, select, button {
+    font-family: inherit;
+    vertical-align: middle;
+    line-height: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/**
+ * Gestion des select en mode content-box comme les autres éléments.
+ */
+button,
+select {
+    box-sizing: content-box;
+}
+button {
+    overflow: hidden;
+}
+.button {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/*
+ * Hack pour assurer un rendu correct sous Firefox, sinon il ajoute des
+ * "padding fantômes".
+ */
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+/* harmoniser les styles par défaut lors de la désactivation */
+input[disabled],
+select[disabled],
+textarea[disabled] {
+    cursor: not-allowed;
+}
+
+/**
+ * Forcer la couleur de fond pour éviter les éventuels bugs de rendus pour
+ * les bordures.
+ */
+textarea, input {
+    padding: 0;
+    margin: 0;
+    /*background: #fff;*/
+}
+textarea {
+    resize: none;
+}
+/* .autoresize {
+    transition: height 0.1s;
+} */
+
+input:-moz-placeholder {
+    color: #999 !important;
+}
+
+
+/*
+ * Outline des composants avec indexation de focus.
+ */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+div:focus,
+select:focus,
+img:focus {
+    outline: 1px dotted #666;
+}
+
+button img,
+label img {
+    vertical-align: middle;
+}
+
+.app-root {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+}
+
+.content-icon {
+    line-height: 1;
+}
+
+/*
+
+Composants NatJet
+=================
+*/
+
+/*
+
+NSBulletList, NSToolbar
+------------------------
+
+Styles appliqués auc composants bulletList.
+
+*/
+
+ul ul, ul ol, ol ol, ol ul {
+    margin-left: 16px;
+}
+.NSBulletList {
+    overflow: auto;
+}
+ul.none,
+ol.none {
+    padding: 0;
+}
+
+.NSBulletList li {
+    list-style: none;
+    padding: 0;
+    list-style-position: inside;
+}
+/* div ajoutée pour assurer le renderAddChild */
+.NSBulletList li > div {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.NSBulletList li > div > * {
+    box-sizing: border-box;
+}
+
+
+.toolbar {
+    /* Display pour gérer l'élasticité */
+    display: table;
+    overflow: scroll-y;
+}
+
+.toolbar li {
+    float: left;
+    /* Display pour gérer l'élasticité */
+    /*display: table-cell;*/
+    padding: 0;
+    /* XXX marge devra être suprimer lorsque l'on définira une propriété de séparation des items */
+    margin: 0;
+    list-style: none;
+    clear: none; /* bug IE 6/7 */
+}
+.toolbar img {
+    vertical-align: middle;
+}
+.NSBulletList.none li {
+    list-style: none;
+}
+
+/*
+.NSBulletList.disc,
+.NSBulletList.disc,
+.NSBulletList.circle,
+.NSBulletList.square,
+.NSBulletList.decimal,
+.NSBulletList.decimal-leading-zero,
+.NSBulletList.lower-roman,
+.NSBulletList.upper-roman,
+.NSBulletList.upper-latin,
+.NSBulletList.lower-latin,
+.NSBulletList.lower-greek,
+.NSBulletList.upper-alpha,
+.NSBulletList.lower-alpha {
+    padding-left: 1.5em;
+}
+*/
+
+.NSBulletList.disc li { list-style-type: disc; }
+.NSBulletList.circle li { list-style-type: circle; }
+.NSBulletList.square li { list-style-type: square; }
+.NSBulletList.decimal li { list-style-type: decimal; }
+.NSBulletList.decimal-leading-zero li { list-style-type: decimal-leading-zero; }
+.NSBulletList.lower-roman li { list-style-type: lower-roman; }
+.NSBulletList.upper-roman li { list-style-type: upper-roman; }
+.NSBulletList.upper-latin li { list-style-type: upper-latin; }
+.NSBulletList.lower-latin li { list-style-type: lower-latin; }
+.NSBulletList.lower-greek li { list-style-type: lower-greek; }
+.NSBulletList.upper-alpha li { list-style-type: upper-alpha; }
+.NSBulletList.lower-alpha li { list-style-type: lower-alpha; }
+
+/* Le line-height de 1 ds pushbuttons peut provoquer des erreur d'affichage dans les boutons
+inclus dans une BulletList - il est cependant utile pour des boutons uniquement
+avec des icônes */
+.NSBulletList button,
+.NSToolbar button {
+    line-height: inherit;
+    box-sizing: border-box;
+}
+
+
+/**
+ * NSCalendar
+ * -----------------------------------------------------------------------------
+ */
+.NSCalendar {
+    background-color: #eee;
+    position: relative;
+}
+.NSCalendar div {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.NSCalendar > .hd {
+    text-align: center;
+    white-space: nowrap;
+}
+.NSCalendar .hd > div {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.NSCalendar .hd > div > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+.NSCalendar .hd img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.NSCalendar select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-align: right;
+}
+.NSCalendar select,
+.NSCalendar input {
+    font-size: inherit;
+    font-weight: bold;
+    border-width: 0;
+    padding: 0 3px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 40%;
+}
+.NSCalendar input {
+    text-align: left;
+}
+.NSCalendar select:hover,
+.NSCalendar select:focus,
+.NSCalendar input:hover,
+.NSCalendar input:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.NSCalendar .bd {
+    border-color: rgba(0,0,0,0.1);
+    background-color: inherit;
+}
+
+.NSCalendar .bd > div {
+    position: relative;
+}
+
+.NSCalendar .ft {
+    bottom: 0;
+    width: 100%;
+}
+
+/* Barre contenant le nom des jours */
+.NSCalendar .days-name-container {
+    box-sizing: border-box;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.NSCalendar .days-name-container > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+.NSCalendar .scroll-container {
+    cursor: pointer;
+    position: relative;
+    background-color: inherit;
+}
+.NSCalendar .days-container {
+    position: absolute;
+    background-color: inherit;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+.NSCalendar .week {
+    /* display: table;
+    table-layout: fixed; */
+    display: table-row;
+    width: 100%;
+}
+.NSCalendar .day {
+    display: table-cell;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    transition: all 0.1s;
+}
+.NSCalendar .day[aria-selected=true] {
+    border-radius: 50%;
+}
+.NSCalendar .day.adjacent {
+    opacity: 0.2;
+}
+
+.NSCalendar .ft button {
+    display: block;
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    font-size: 100%;
+    box-sizing: border-box;
+}
+.NSCalendar .ft button:hover,
+.NSCalendar .ft button:focus {
+    opacity: 0.7;
+}
+
+/*
+
+NSCheckBox
+-----------------
+*/
+
+.NSCheckBox {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+/*
+
+NSComboBox
+----------------------------------------
+*/
+
+.NSComboBox {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 205px;
+    padding: 1px 0px 1px 5px;
+}
+
+/*
+correction de M7605 : évite que les options d'une combobox soient de la couleur invalide si le champ de la combobox est invalide.
+les options de combobox deviennent noires si la variable --fg n'a pas été définie.
+*/
+.NSComboBox > option {
+    color: var(--fg);
+}
+
+/* Elément servant de masque à des combobox en readonly */
+
+.combobox-readonly-mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index:2;
+    /* La couleur nécessaire pour IE 9/10 (transparent ne permet pas de bloquer
+       le click). Pour IE < 9, jouer avec un filter. */
+    background:rgba(0,0,0,0.02);
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=10);
+}
+
+.NSComboBox.edition {
+    box-sizing: border-box;
+}
+
+
+/*
+
+NSContainer
+---------------------------
+*/
+
+.NSContainer {
+    position: relative;
+    overflow: auto;
+}
+
+
+/*
+NSContentPane
+----------------------------------------
+*/
+
+.NSContentPane {
+    position: relative;
+    /*
+    top: 0;
+    left: 0;
+    */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.NSContentPane[data-horizontal=center] {
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.NSContentPane[data-horizontal=begin] {
+    margin-left: 0;
+}
+.NSContentPane[data-horizontal=end] {
+    right: 0;
+}
+
+.NSContentPane[data-horizontal=fill] {
+    width: 100%;
+}
+.NSContentPane[data-horizontal=fillnoscroll] {
+    width: 100%;
+    overflow-x: hidden
+}
+
+.NSContentPane[data-vertical=center] {
+    margin-top: auto;
+    margin-bottom: auto;
+    bottom: 0;
+    top: 0;
+}
+.NSContentPane[data-vertical=begin] {
+    margin-top: 0;
+}
+.NSContentPane[data-vertical=end] {
+    margin-bottom: 0;
+    bottom: 0;
+}
+.NSContentPane[data-vertical=fill] {
+    height: 100%;
+}
+.NSContentPane[data-vertical=fillnoscroll] {
+    height: 100%;
+    overflow-y: hidden
+}
+.NSContentPane[data-vertical=adaptative] {
+    top: 0;
+}
+.NSContentPane > div > .NSContentPane {
+    position: absolute;
+}
+
+/*
+
+NSContextMenu
+.............
+*/
+
+.context_menu_container {
+    position: absolute;
+    padding: 1px 2px 2px 1px;
+}
+.context_menu_container ul {
+    display: table;
+    color: #0f0f0f;
+    border: 1px solid #afa396;
+    background: #f7f5f3;
+    padding: 1px;
+    margin: 0;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.context_menu_container li {
+    display: table-row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.context_menu_container li:hover {
+    background-color: #fec87e;
+    border-color: #c1832c;
+}
+
+.context_menu_container a {
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    color: #000;
+    padding: 0 15px 0 5px;
+    /*border: 1px solid #f7f5f3;*/
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+.context_menu_container span {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2px 5px;
+}
+.context_menu_container .menu_sh {
+    text-align: right;
+}
+.context_menu img {
+    vertical-align: middle;
+}
+.context_menu .menu_sep {
+    height: 1px;
+    vertical-align: middle;
+}
+.context_menu .menu_sep span {
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #afa396 #afa396 #fff;
+    padding: 0;
+}
+
+.context_menu_container div {
+    padding: 1px 2px 2px 1px;
+    position: absolute;
+    left: -9999em;
+}
+.context_menu ul {
+    border: 1px solid #afa396;
+    background: #f7f5f3;
+}
+.context_menu li:hover > div {
+    left: 100%;
+    margin-left: -5px;
+}
+
+
+/*
+
+NSDatePicker
+-----------------------
+*/
+
+.NSDatePicker {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    color: #333;
+    background-color: #fff;
+    width: 200px;
+    padding: 0px;
+    border: 1px solid #999;
+    /*--icon: "!I!fr/natsystem/resources/pics/chevrons/down-black.png"; */
+}
+/*
+.NSDateField a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.NSDateField a:hover,
+.NSDateField a:focus {
+    background-color: #eee;
+}
+*/
+
+/*
+
+NSFlowContainer
+---------------------------
+
+Conteneur dans lequel les enfants doivent se répartir comme dans le flux normal
+pas de position absolue.
+*/
+
+.NSFlowContainer {
+    overflow: auto;
+}
+
+.NSFlowContainer > div {
+    position: relative;
+}
+
+.NSFlowContainer[data-flowtype=WrapModeXY] > div {
+    display: inline-block;
+}
+.NSFlowContainer[data-flowtype=ContinueX] {
+    white-space: nowrap;
+}
+.NSFlowContainer[data-flowtype=ContinueX] > div {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.NSFlowContainer[data-flowtype=ContinueY] > div {
+    display: block;
+    width: 100%;
+}
+
+/*
+
+NSNumericalTextField
+--------------------
+*/
+
+.NSNumericalTextField {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    color: #333;
+    background-color: #fff;
+    width: 200px;
+    padding: 0px;
+    border: 1px solid #999;
+}
+
+
+/*
+
+NSSplitLayout, NSBorderLayout
+----------------------------
+*/
+
+.NSGridPane {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.top,
+.bottom,
+.central,
+.left,
+.right,
+.center {
+    position:absolute;
+    /* XXX Ne pas mettre de transition sinon cela plante GridLayout */
+    /* transition: all 0.1s; */
+}
+.top,
+.bottom,
+.left,
+.right,
+.center {
+    overflow: auto;
+}
+
+.central {
+    width: 100%;
+}
+
+.top {
+    top:0;
+    width: 100%;
+}
+
+.bottom {
+    bottom:0;
+    width: 100%;
+}
+
+.center {
+    top:0;
+    height: 100%;
+}
+
+.left {
+    top:0;
+    left: 0;
+    height: 100%;
+}
+
+.right {
+    top:0;
+    right:0;
+    height: 100%;
+}
+
+.NSSplitLayout {
+    position:absolute;
+    overflow:hidden;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.NSSplitLayout > .pane {
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+}
+
+.NSSplitLayout > [role='separator'],
+.NSBorderLayout > [role='separator'],
+.NSBorderLayout > div > [role='separator'] {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    z-index: 1;
+}
+.NSBorderLayout > .top > div,
+.NSBorderLayout > .bottom > div,
+.NSBorderLayout > .central > .left > div,
+.NSBorderLayout > .central > .center > div,
+.NSBorderLayout > .central > .right > div {
+    width: 100%;
+    height: 100%;
+}
+
+/* Fenêtre NSWP */
+.NSBorderLayout.NoScroll > .top > div,
+.NSBorderLayout.NoScroll > .bottom > div,
+.NSBorderLayout.NoScroll > .central > .left > div,
+.NSBorderLayout.NoScroll > .central > .center > div,
+.NSBorderLayout.NoScroll > .central > .right > div {
+    overflow: hidden;
+}
+
+.moving[role='separator'] {
+    z-index: 10;
+}
+.movable[role='separator']:hover {
+    opacity: 0.7;
+}
+[role='separator'][aria-orientation='horizontal'] {
+    width: 100%;
+    height: 0;
+}
+.movable[role='separator'][aria-orientation='horizontal'] {
+    cursor: row-resize;
+}
+[role='separator'][aria-orientation='vertical'] {
+    height: 100%;
+    width: 0;
+}
+.movable[role='separator'][aria-orientation='vertical'] {
+    cursor: col-resize;
+}
+
+/* avec attribut séparator, poids trop important par rapport aux règles du stylesheet */
+/*[role='separator']*/[aria-orientation='horizontal'].movable {
+                          height: 1px;
+                      }
+/*[role='separator']*/[aria-orientation='vertical'].movable {
+                          width: 1px;
+                      }
+[role='separator'][aria-hidden=true] {
+    display: none;
+}
+
+/*
+
+Tables : NSGridView, NSListView, NSTreeView
+--------------------------------------------
+*/
+
+.NSGridView,
+.NSListView,
+.NSTreeView {
+    position: relative;
+    cursor: pointer;
+}
+
+.NSGridView > div > table,
+.NSListView > div > table,
+.NSTreeView > div > table {
+    border-color: inherit;
+    border-collapse: collapse;
+}
+.NSGridView tbody, .NSGridView tr, .NSGridView td,
+.NSListView tbody, .NSListView tr, .NSListView td,
+.NSTreeView tbody, .NSTreeView tr, .NSTreeView td {
+    border-color: inherit;
+}
+
+.fixed table {
+    border-collapse: collapse;
+    border: 0;
+}
+
+/* col */
+
+.NSGridView .col,
+.NSListView .col,
+.NSTreeView .col {
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: inherit;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    overflow-x: scroll;
+}
+
+/* corner */
+
+.NSGridView .corner,
+.NSListView .corner,
+.NSTreeView .corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: inherit;
+    z-index: 2;
+    background-color: inherit;
+    border-top-left-radius: inherit;
+}
+
+/* header */
+
+.NSGridView .hd,
+.NSListView .hd,
+.NSTreeView .hd {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: inherit;
+    /* border-right-color: transparent; */
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+/*.NSGridView .hd > table,*/
+
+.NSGridView .hd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* body */
+
+.NSGridView .bd,
+.NSListView .bd,
+.NSTreeView .bd {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    border-color: inherit;
+}
+
+.NSTreeView > .bd {
+    cursor: pointer;
+}
+
+/*.NSGridView .bd > table,*/
+
+.NSTreeView .bd > table {
+    vertical-align: top;
+}
+
+/* bd table */
+.table-last-row .bd > table {
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+/* table-outline: tableau servant à dessiner l'outline des TreeView */
+.table-outline {
+    border: 0;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.table-outline td {
+    position: relative;
+    padding: 0;
+    border: 0;
+}
+.outline-indent-cell,
+.outline-expando-cell {
+    width: 19px;
+    /* voir mantis 6291 */
+    min-width: 19px;
+    text-align:center;
+}
+.outline-indent-cell > div,
+.outline-expando-cell > div {
+    /* Impossible de passer par là à cause de IE */
+    /* position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0; */
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    min-height: 19px;
+}
+
+.outline-expando-cell > div {
+    /* left: 0; */
+    width: 100%;
+    height: 100%;
+    /* Taille indispensable pour IE*/
+    min-width: 16px;
+    min-height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.outline-expando-cell::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-width: 0 0 0 1px;
+    border-style: none;
+}
+
+.outline-expando-cell::after {
+    content: "";
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-width: 0 0 1px;
+    border-style: none;
+}
+
+.outline-expando-cell.outline-last-child::before {
+    height: 50%;
+}
+
+.outline-fill > div {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+}
+.outline-dotted .outline-fill > div {
+    border-width: 0 0 0 1px;
+    border-style: dotted;
+}
+
+.outline-dotted .outline-expando-cell::after,
+.outline-dotted .outline-expando-cell::before {
+    border-style: dotted;
+}
+
+/* cellules des tables */
+
+.table-cell {
+    position: relative;
+    overflow: hidden;
+    background-clip: padding-box;
+}
+
+.col .table-cell,
+.bd .table-cell  {
+    border-width: 1px;
+    border-style: solid;
+}
+.col .table-cell:first-child {
+    border-width: 1px 1px 1px 0;
+}
+.hd .table-cell {
+    border-width: 0 1px 1px;
+    border-style: solid;
+}
+.hd tr:last-child .table-cell {
+    border-bottom-width: 0;
+}
+.corner .table-cell,
+.table-col .table-cell {
+    border-width: 0 1px;
+    border-style: solid;
+}
+
+/* masquage de lignes */
+.NSGridView tr[aria-hidden="true"],
+.NSListView tr[aria-hidden="true"],
+.NSTreeView tr[aria-hidden="true"] {
+    display: none;
+}
+
+/* Définition par classe de négation */
+.table-no-row .table-cell {
+    border-width: 0 1px !important;
+}
+.table-no-col .table-cell {
+    border-width: 1px 0 !important;
+}
+.table-no-row.table-no-col .table-cell {
+    border-width: 0 !important;
+}
+
+.table-no-row td {
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+.table-no-col td {
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.table-no-last-row .bd {
+    border-width: 0;
+}
+.cell-hidden {
+    width: 0;
+}
+.cell-hidden > div {
+    display: none;
+}
+
+/* correctifs */
+.table-cell:last-child {
+    border-right-width: 0 !important;
+}
+.table-cell:first-child {
+    border-left-width: 0 !important;
+}
+tr:first-child > .table-cell {
+    border-top-width: 0 !important;
+}
+
+
+/* Applatir la treeview quand root non visible */
+
+.NSTreeView.no-root-handle .indent-base,
+.NSTreeView.no-root .indent-base {
+    width: 0 !important;
+    min-width: 0;
+}
+
+/*
+
+NSGridView
+.............
+*/
+
+.NSGridView table {
+    table-layout: fixed;
+}
+
+.NSGridView th {
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    /* debug */
+    background-color: #ededed;
+}
+
+.NSGridView .data {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.NSGridView th[aria-selected=true] {
+    background-color: #cbcbcb;
+}
+.NSGridView td[aria-selected=true] {
+    box-shadow: 0 0 2px 1px #3399ff inset;
+}
+
+
+/*
+
+ NSListView | NSTreeView
+........................
+*/
+
+/*
+.NSTreeView td {
+    vertical-align: top;
+}
+*/
+.NSTreeView table,
+.NSListView table {
+    table-layout: fixed;
+    /* TODO Vérifier l'usage du white-space (retrour ligne headers longs ?) */
+    /* white-space: normal; */
+}
+
+.NSListView th, .NSListView td,
+.NSTreeView th, .NSTreeView td {
+    overflow: hidden;
+    /*white-space: nowrap;*/
+}
+.NSListView th {
+    text-align: left;
+    font-weight: normal;
+    /* TODO Vérifier l'usage du white-space (retrour ligne headers longs ?) */
+    /* white-space: normal; */
+}
+/* test edition listview */
+.NSListView td > div > .NSTextField,
+.NSTreeView td > div > .NSTextField {
+    border: 1px solid #fff;
+}
+td > div > *:not(.NSTemplate) {
+    max-width: 100%;
+}
+
+/* resizer */
+
+.resizeBar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 1px;
+    background-color: #007ad9;
+    margin: 0;
+    padding: 0;
+}
+
+.hd td > div,
+.corner td > div {
+    position: relative;
+}
+
+.resizeAnchor {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 5px;
+    cursor: ew-resize;
+    cursor: col-resize;
+}
+
+/* .resizeAnchor:hover {
+    background-color: rgba(0,0,0,0.2);
+} */
+
+/* filterable */
+
+.filter-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* typo */
+    text-align: center;
+    font-weight: normal;
+    /* box */
+    width: 16px;
+    /* colors */
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: contain;
+}
+
+.filter-btn:hover {
+    /* colors */
+    background-color: rgba(0,0,0,0.015);
+}
+
+.filter-pane {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.4);
+    text-align: center;
+    background: #eee;
+    padding: 0;
+}
+
+.filter-pane p {
+    margin: 0 0 5px;
+}
+.filter-pane select,
+.filter-pane input {
+    font-size: 1em;
+    border: 1px solid #aaa;
+    border-radius: 1px;
+}
+.filter-pane label {
+    margin: 0 5px;
+}
+.filter-pane select {
+    margin-right: 1px;
+}
+.filter-pane input[type=text] {
+    width: 80px;
+}
+.filter-pane-enum select {
+    width: 140px;
+    margin: 0;
+}
+
+.filter-options {
+    padding: 10px;
+    margin: 0;
+}
+
+.filter-actions {
+    margin: 0;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+.filter-actions button {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+    background-color: #ccc;
+    width: 50%;
+    padding: 5px 0;
+    margin: 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: #aaa #888 #888 #aaa;
+}
+.filter-actions button:hover,
+.filter-actions button:focus {
+    color: #fff;
+}
+.filter-action-btn:hover,
+.filter-action-btn:focus {
+    background-color: #7FAE00;
+    border-color: #7FAE00;
+}
+.filter-erase-btn:hover,
+.filter-erase-btn:focus {
+    background-color: #c00000;
+    border-color: #c00000;
+}
+
+.filter-pane-date input {
+    width: 120px;
+}
+.filter-cal-btn {
+    cursor: pointer;
+}
+.filtered {
+    display: none;
+}
+
+/*
+
+searchable
+---------------------
+*/
+
+.table-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.table-search > input {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/*
+    sort
+    Alignement des tableaux tricell de tri quand headerAlignment.
+    Ne sera plus nécessaire quand on fera sauter l'usage des tableaux
+    pour rendre l'association libellé - icône.
+*/
+.table-cell[data-align=center] table {
+    margin: 0 auto;
+}
+.table-cell[data-align=right] table {
+    margin: 0 0 0 auto;
+}
+
+
+/*
+
+NSGroupBox
+---------------
+
+Corriger un bug IE lors de l'ancrage elastique de certains composants.
+Pour comprendre un height 100%, l'élément à besoin d'être en position absolue.
+STATUS: ACTIVE
+
+*/
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+legend {
+    /* XXX Forcer une background sinon legend n'hérite pas de la couleur de fieldset */
+    background-color: transparent;
+    padding: 0 2px;
+}
+
+/* Forcer un zindex pour éviter d'être derrière le bd dan certains cas. */
+.NSGroupBox > .hd > div {
+    position: relative;
+    z-index: 1;
+}
+
+.NSGroupBox > .bd {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    overflow: hidden;
+    /* *width: 100%; */
+    /* *height: 100%; */
+}
+
+/*
+
+NSImage
+----------
+*/
+
+.NSImage.disabled .disabled {
+    opacity: 0.5;
+}
+
+.NSImage.actionable {
+    cursor: pointer;
+}
+
+
+/*
+
+NSInfoBox
+----------
+*/
+
+.NSInfoBox {
+    position: relative;
+    margin: 0;
+    titlecolor: #333;
+    titlebackground-color: #eee;
+    titlefont-size: 12px;
+    titlefont-family: Arial, sans-serif;
+    titlepadding: 5px 5px 5px 20px;
+    textcolor: #666;
+    textbackground-color: #fff;
+    textpadding: 5px;
+    textfont-size: 12px;
+    border-radius: 3px;
+    width: 200px;
+}
+
+.NSInfoBox dt {
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 5px 0 20px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: 2px 50%;
+    border-width: 0;
+    border-style: solid;
+    border-color: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.NSInfoBox[aria-expanded=false] > dt {
+    border-radius: inherit;
+}
+
+/* .NSInfoBox[aria-expanded=true] > dd */
+.NSInfoBox > dd {
+    background-color: inherit;
+    border-width: inherit;
+    border-style: inherit;
+    border-color: inherit;
+    visibility: visible;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    right:0;
+    z-index: 300;
+    transition: height 0.1s;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.NSInfoBox > dd > div {
+    padding: 5px;
+    overflow: auto;
+}
+
+/*
+
+NSLabel
+--------------
+
+Correction du rendu du composant NSLabel: le contenu doit s'adapter à la
+taille du composant. Tout ce qui dépasse doit disparaître.
+STATUS : ACTIVE
+
+*/
+
+.NSLabel {
+    color: #333;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    cursor: inherit;
+    display: inline-block;
+    vertical-align: middle;
+}
+.NSLabel > .text-icon {
+    position: relative;
+}
+
+/*
+NSLink
+-----------------
+*/
+
+.NSLink {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    text-decoration: underline;
+    color: #4E7DBF;
+}
+
+/*
+
+NSListBox
+----------
+
+Correction du rendu du composant NSListBox
+
+*/
+
+.NSListBox {
+    color: #333;
+    background-color: #fefefe;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #999;
+    border-radius: 3px;
+    width: 200px;
+    height: 150px;
+}
+
+.NSListBox div {
+    white-space : pre;
+}
+
+/*
+
+NSMediaObject
+-----------------
+*/
+
+.NSMediaObject {
+    width: 200px;
+    height: 150px;
+}
+
+/*
+
+NSMessageDialog
+----------------
+*/
+
+.NSMessageDialog-mask {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-Color: rgba(0,0,0,0.5);
+    z-index: 10000;
+}
+.NSMessageDialog-mask.mask-notice {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+.NSMessageDialog {
+    position: absolute;
+    z-index: 10001;
+    opacity: 1;
+    min-width: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    /* styles par défauts qui seront supplentés par les styles echo 3 */
+    background-color: #eee;
+    overflow: hidden;
+    transition: opacity 0.2s;
+}
+.NSMessageDialog.Progress {
+    cursor: progress;
+}
+.NSMessageDialog.Notice {
+    left: 50%;
+    top: 10px;
+}
+
+.NSMessageDialog[aria-hidden=true] {
+    opacity: 0;
+}
+.NSMessageDialog > .bd {
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.NSMessageDialog .comp-icon,
+.NSMessageDialog .comp-message {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+.NSMessageDialog .comp-icon {
+    /* float: left; */
+    padding: 0 10px 0 0;
+}
+.NSMessageDialog .comp-message {
+    overflow: auto;
+}
+.NSMessageDialog .comp-icon img {
+    vertical-align: middle;
+}
+
+.NSMessageDialog > .ft {
+    text-align: center;
+}
+
+.NSMessageDialog .message-list {
+    padding: 0;
+    margin: 0;
+}
+.NSMessageDialog .message-list dt {
+    font-weight: bold;
+    margin: 0;
+}
+.NSMessageDialog .message-list dd {
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+
+/* test de styles sur les boutons */
+
+.NSMessageDialog button {
+    outline: none;
+    padding: 5px 10px;
+    margin: 0 5px 0 0;
+    border-radius: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.NSMessageDialog .ft > progress {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    height: 1rem;
+    border: 1px solid rgba(0,0,0,0.5);
+    transition: all 0.1s;
+}
+
+.NSMessageDialog .progressbar {
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    height: 1rem;
+    background-color: #E6E6E6;
+    border: 1px solid rgba(0,0,0,0.5);
+    transition: all 0.1s;
+}
+
+.NSMessageDialog .progressbar > .value {
+    display: inline-block;
+    margin: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0064B4;
+    transition: width 0.1s;
+}
+
+/*
+
+NSSpinner
+-------------
+*/
+
+.NSSpinner {
+    overflow: hidden;
+    position: relative;
+    /*spinborder: 1px solid #999;
+    spinbackground-color: #ddd;
+    spinIncrementIcon" t="ResourceImageReference">/fr/natsystem/resources/pics/chevrons/up-black.png;
+    spinDecrementIcon" t="ResourceImageReference">/fr/natsystem/resources/pics/chevrons/down-black.png;*/
+}
+
+.NSSpinner input {
+    background: #fff;
+    clear: left;
+    float: left;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    color: #333;
+    background-color: #fff;
+    width: 50px;
+    padding: 0px;
+    border: 1px solid #999;
+}
+.NSSpinner .btn {
+    border: 1px solid #999;
+    background-color: #ddd;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color: transparent;
+    width: 13px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 9px;
+    font-size: 0;
+    line-height: 0;
+}
+.NSSpinner .btn-decrement {
+    bottom: 0;
+    top: auto;
+}
+.NSSpinner .btn:hover,
+.NSSpinner .btn:focus {
+    background-color: #eee;
+}
+
+/*
+
+NSSuggestField
+---------------
+
+Le suggest est maintenant placé dans un popup
+
+*/
+
+.NSSuggestField {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    color: #333;
+    background-color: #fff;
+    width: 200px;
+    padding: 0px;
+    border: 1px solid #999;
+    /*
+    popupIcon" t="ResourceImageReference">/fr/natsystem/resources/pics/chevrons/down-black.png;
+    <!-- popup -->
+    popupcolor: #333;;
+    popupbackground-color: #fefefe;
+    popupborder: 1px solid #999;
+    <!-- entry -->
+    entrypadding: 2px 5px;
+    entryRolloverbackground-color: #39f;
+    entryRollovercolor: #fff;
+    entryRolloverborder: 1px solid #39f;
+    entrySelectionbackground-color: #39f;
+    entrySelectioncolor: #fff;
+    entrySelectionborder: 1px solid #39f;
+    */
+}
+
+.suggest {
+    cursor: pointer;
+}
+
+.suggest li {
+    list-style: none;
+    border: 1px solid transparent;
+    padding: 2px 5px;
+    margin: 1px;
+}
+
+.entryNoScroll > li {
+    overflow: hidden;
+}
+
+/* Styles pour assurer la hauteur d'un item de suggestion vide */
+.suggest .empty {
+    height: 1em;
+}
+
+/*
+
+NSTextArea
+-------------------------
+*/
+.NSTextArea {
+
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    width: 200px;
+    height: 150px;
+    padding: 0px;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+/*
+
+NSTextField
+-------------------
+*/
+
+.NSTextField {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    width: 200px;
+    padding: 0px;
+    border: 1px solid #999;
+}
+
+/*
+
+Tab components: NSTabbedPane, NSAccordionPane
+---------------------------------------------
+*/
+
+.NSAccordionPane {
+    overflow: hidden
+}
+.NSAccordionPane > .hd {
+    cursor: pointer;
+    background-color: #eee;
+}
+.NSAccordionPane > [role=tabpanel] {
+    overflow: auto;
+    transition: height 0.4s;
+}
+.tab-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing : border-box;
+}
+
+.NSTabbedPane {
+    position: relative;
+}
+.NSTabbedPane > .hd,
+.NSTabbedPane > .bd {
+    position: absolute;
+    overflow: hidden;
+}
+
+.NSTabbedPane > .hd > [role=tablist] {
+    overflow: hidden;
+    margin: 0;
+}
+/*
+    Structure HTML d'un onglet:
+
+    <div role="tab">
+        <div>
+            <table class="tab-content">
+                <tr>
+                    <td>
+                        <div class="tab-text">...</div>
+                    </td>
+                    <td>
+                        <img src="">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+*/
+
+.NSTabbedPane > .hd [role=tab] {
+    /*float: left;*/
+    display: table-cell;
+    cursor: pointer;
+    position: relative;
+    vertical-align: bottom;
+}
+
+/* Pour les onglets à étendre */
+.NSTabbedPane > .tabs-extended [role=tablist] {
+    display: table;
+    width: 100%;
+}
+.NSTabbedPane > .tabs-extended [role=tab] {
+    box-sizing: border-box;
+    /* Forcer la marge à 0 (tabSpacing) */
+    margin: 0 !important;
+}
+
+/* tabs scroll */
+.NSTabbedPane > .tabs-scroll [role=tablist] {
+    margin: 0 20px;
+}
+
+.tabs-scroll-left,
+.tabs-scroll-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    height: 100%;
+    width: 20px;
+}
+.tabs-scroll-left {
+    left: 0;
+}
+.tabs-scroll-right {
+    right: 0;
+}
+
+.tabs-scroll-left > img,
+.tabs-scroll-right > img {
+    width: 100%;
+}
+
+/* Activer / désactiver */
+.NSTabbedPane > .hd [aria-hidden=true] {
+    display: none;
+}
+.NSTabbedPane > .hd [aria-disabled=true] {
+    cursor: default;
+}
+.NSTabbedPane > .hd [aria-selected=true] {
+    z-index: 1;
+}
+
+.NSTabbedPane > .hd [role=tab] > div {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: color 0.2s, background-color 0.2s;
+}
+/* Ne pas appliquer la marge gauche (tabSpacing) à la première tab*/
+.NSTabbedPane > .hd [role=tab]:first-child > div {
+    margin-left: 0 !important;
+}
+
+/* zone contenant le texte et l'icone d'un onglet (tableau */
+.tab-content {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+}
+.tab-content td {
+    padding: 0;
+    /*vertical-align: bottom;*/
+    text-align:center;
+    line-height: 1;
+}
+/* Zone de texte de tab */
+.tab-text {
+    overflow: hidden;
+    white-space: nowrap;
+}
+/* TODO: donner la possibilité de configurer */
+.tab-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: auto;
+}
+/*
+
+Corps dyu TabbedPane
+*/
+.NSTabbedPane > .bd {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.NSTabbedPane > .bd > [role=tabpanel] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.tab-close {
+    cursor: pointer;
+}
+
+.NSTabbedPane > .bd > [aria-hidden=true] {
+    display: none;
+}
+
+[role=tablist] {
+    scroll-behavior: smooth;
+    /*display:flex;
+    flex-wrap:wrap;*/
+}
+
+/**
+ *  NSTemplate
+ * ------------
+ */
+.NSTemplate {
+    overflow: auto;
+    position: relative;
+}
+.NSTemplate > div {
+    width: 100%;
+    height: 100%;
+}
+
+.NSFlowContainer > div > .NSTemplate > div > .NSContentPane[data-vertical=adptative] {
+    position: relative;
+}
+
+
+/*
+
+Menus : NSMenuBar, NSContextMenu
+================================
+*/
+
+.MenuComponent {
+    outline: none;
+    cursor: pointer;
+}
+
+.menuitem {
+    display: table;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.menuitem * {
+    display: table-cell;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.menuitem-icon,
+.menuitem .content-icon,
+.menuitem-checkbox {
+    position: relative;
+    width: 20px;
+    padding: 0;
+}
+/*
+.menuitem img {
+    max-width: 100%;
+}
+*/
+.menuitem .content-text {
+    padding: 0 20px 0 5px;
+    display: inline-table;
+}
+.menuitem-submenu-arrow,
+.menuitem-accel {
+    position: relative;
+    text-align: right;
+}
+
+.menuitem > [aria-hidden=true] {
+    display: none;
+}
+
+.menuitem[aria-disabled=true] {
+    color: rgba(0,0,0,0.3);
+}
+
+.menu {
+    position: absolute;
+    z-index: 30050;
+}
+.menu > div {
+    position: relative;
+    z-index: 10;
+}
+
+.menu table {
+    border-collapse: collapse
+}
+.menu-separator {
+    height: 0;
+    line-height: 0;
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-color: #a7a7a7;
+    margin: 3px 0 0;
+    padding: 3px 0 0;
+}
+
+.menu-separator + .menu-separator {
+    display: none;
+}
+
+.menu[class*=cols-] {
+    column-gap: 5px;
+}
+
+.menu[class*=cols-] .menuitem {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: auto;
+    text-align: center;
+}
+.menu.cols-2 .menuitem:nth-child(2n+1) {
+    clear: left;
+}
+.menu.cols-3 .menuitem:nth-child(3n+1) {
+    clear: left;
+}
+.menu.cols-4 .menuitem:nth-child(4n+1) {
+    clear: left;
+}
+.menu.cols-5 .menuitem:nth-child(5n+1) {
+    clear: left;
+}
+
+/*
+.menu.cols-3 .menuitem {
+    width: 33.333%;
+}
+.menu.cols-4 .menuitem {
+    width: 25%;
+}
+.menu.cols-5 .menuitem {
+    width: 20%;
+}
+*/
+
+/*
+
+NSMenuBar
+----------------
+*/
+
+.NSMenuBar {
+    overflow: hidden;
+}
+.NSMenuBar table {
+    border-collapse: collapse;
+    table-layout: auto;
+    display: block;
+    height: 100%;
+}
+.NSMenuBar td,
+.NSMenuBar li {
+    padding: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.NSMenuBar td > div,
+.NSMenuBar li > div {
+    white-space: nowrap;
+}
+.NSMenuBar img {
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+.NSMenuBar span {
+    vertical-align: middle;
+}
+
+/*
+ NSMenuBar de type list
+*/
+.menuBar {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none; /* Eviter les puces */
+}
+
+.link-bar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: pre; /* Ne pas couper les items */
+}
+
+.context-bar {
+    flex: 1;
+    overflow: hidden;
+}
+
+.context-bar-link, .grouped-link {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+}
+
+/*
+ NSMenuBar menu déroulant d'overflow
+*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    right: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/*
+   Activation de l'alignement à droite des menus de la menuBar
+   Ne fonctionne que pour les menus en mode list (nav/ul/li)
+   Ne fonctionne pas pour les menus en mode table (table/tbody/tr/td)
+ */
+.firstAlignRightMenuItem {
+    margin-left: auto;
+}
+
+
+
+/*
+
+NSMask
+---------
+*/
+
+.NSMask,
+.mask,
+.ModalMask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+}
+
+.NSMask[aria-hidden=true],
+.mask[aria-hidden=true],
+.ModalMask[aria-hidden=true] {
+    display: none !important;
+}
+
+/*
+
+NSMenuButton
+------------------------
+*/
+
+.menuForButton.DropDownMenu {
+    position: absolute;
+    display: block;
+    text-align: center;
+}
+.menuForButton.DropDownMenu > span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.menuForButton.DropDownMenu > span:last-child {
+    display: none;
+}
+.menuForButton.DropDownMenu img {
+    position: absolute;
+}
+.menuForButton.DropDownMenu.position-right img,
+.menuForButton.DropDownMenu.position-left img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.NSMenuButton.dropdown-position-right > *:last-child {
+    margin-right: 15px;
+}
+.menuForButton.DropDownMenu.position-right {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 11px;
+    padding: 0 3px;
+}
+
+.menuForButton.DropDownMenu.position-right[data-separator=true] {
+    border-width: 0 0 0 1px;
+    border-style: dotted;
+}
+
+.NSMenuButton.dropdown-position-left > *:first-child {
+    margin-left: 15px;
+}
+.menuForButton.DropDownMenu.position-left {
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 11px;
+    padding: 0 3px;
+}
+.menuForButton.DropDownMenu.position-left[data-separator=true] {
+    border-width: 0 1px 0 0;
+    border-style: dotted;
+}
+
+/* position bottom */
+
+.NSMenuButton.dropdown-position-bottom > *:last-child {
+    margin-bottom: 15px;
+}
+.menuForButton.DropDownMenu.position-bottom {
+    bottom: 0;
+    height: 11px;
+    left: 0;
+    width: 100%;
+    padding: 3px 0;
+}
+.menuForButton.DropDownMenu.position-bottom[data-separator=true] {
+    border-width: 1px 0 0;
+    border-style: dotted;
+}
+
+/*
+
+MsgBox
+------
+*/
+
+.MsgBoxTextPane textarea {
+    overflow: auto;
+}
+
+
+/*
+
+NSPushButton
+-------------
+
+Règle de styles appliquées aux composants PushButton
+Permet de corriger la taille du bouton sous IE lorsqu'aucune largeur ne lui
+est appliqué. Les marges internes sont beaucoup plus grandes que sous Firefox
+ou tout autre navigateur (de fait, il ne s'agit même pas de padding mais d'un
+modèle de rendu propre à IE).
+STATUS: ACTIVE
+*/
+
+.NSPushButton,
+button {
+    /* box */
+    padding: 0;
+    padding: 0;
+    width: auto;
+    /* typo */
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    /* Le line-height de 1 peut provoquer des erreur d'affichage dans les boutons
+    inclus dans une BulletList - il est cependant utile pour des boutons uniquement
+    avec des icônes */
+    /* line-height: 1 */;
+    /* decorations */
+    color: #333;
+    background-color: #fefefe;
+    border: 1px solid #999;
+    /*
+    labelpadding: 0px;
+    labeltext-align: left;
+    labelbackground-color: rgba(252,252,252,0.0);
+    labelborder: 0px solid #eee;
+    urlfont-size: 12px" bo="1" un="1"><tf>Arial, sans-serif;
+    urlpadding: 0px;
+    urltext-align: left;
+    urlbackground-color: rgba(252,252,252,0.0);
+    urlborder: 0px solid #eee;
+    */
+}
+
+button span {
+    /* display: block; */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/**
+ * Rendre aux boutons un look désactivé correct sous firefox quand on a définit
+ * une couleur de texte particulière
+ */
+button[disabled="disabled"] {
+    color: #aca899;
+}
+
+button[disabled="disabled"] img {
+    opacity: 0.5;
+}
+
+/**
+ * Styles appliqués aux pushButton quand ils sont sous la forme "link".
+ */
+.NSPushButton.linkButton,
+.NSPushButton.labelButton {
+    background: transparent;
+    padding: 0;
+    border-width: 0;
+    border-style: none;
+    text-align: left;
+}
+.linkButton {
+    text-decoration: underline;
+}
+.linkButton span {
+    /* text-decoration: underline; */
+    display: block;
+    /*text-align: left;*/
+}
+.linkButton:hover,
+.NSPushButton.linkButton:hover,
+.labelButton:hover,
+.NSPushButton.labelButton:hover {
+    border-width: 0;
+    background: transparent;
+}
+/* .NSPushButton.linkButton:hover {
+    color: #f80;
+}*/
+
+/* tableau dans un bouton - quand un texte est associé à une icône */
+.NSButton table,
+.NSPushButton table {
+    table-layout: fixed;
+    margin: 0; /*0 auto;*/
+}
+.NSButton table {
+    max-width: 100%;
+}
+.NSPushButton table {
+    white-space: nowrap;
+}
+
+/*
+
+NSRadioButton
+----------------
+*/
+
+.NSRadioButton {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+/*
+
+NSSlider
+---------
+*/
+
+.NSSlider > .rail {
+    position: relative;
+}
+
+.NSSlider > .prev,
+.NSSlider > .next {
+    position: absolute;
+    z-index: 1;
+    width: 14px;
+    border: 1px solid #959595;
+    background-color: #d6d6d8;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.NSSlider[aria-orientation=horizontal] > .prev {
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.NSSlider[aria-orientation=horizontal] > .next {
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.NSSlider[aria-orientation=vertical] > .prev {
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.NSSlider[aria-orientation=vertical] > .next {
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.NSSlider > .prev[aria-hidden=true],
+.NSSlider > .next[aria-hidden=true] {
+    display: none;
+}
+
+.NSSlider > .handler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* box model */
+    /*box-sizing: border-box;*/
+    width: auto;
+    height: auto;
+    /* decoration */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    border-radius: 2px;
+    cursor: pointer;
+    /* selection */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+}
+
+.NSSlider > .scrollhandler {
+    border: 1px solid #959595;
+    background-color: #d6d6d8;
+}
+
+.NSSlider .info {
+    position: absolute;
+    padding: 2px 5px;
+    background-color: #f5f5b5;
+    border: 1px solid #baba45;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+}
+.NSSlider[aria-orientation=horizontal] .info {
+    top: 100%;
+    margin: 5px 0 0;
+}
+.NSSlider[aria-orientation=horizontal] .info.pos-top {
+    top: auto;
+    bottom: 100%;
+    margin: 0 0 5px;
+}
+.NSSlider[aria-orientation=vertical] .info {
+    left: 100%;
+    margin: 0 0 0 5px;
+}
+
+.NSSlider .pichandler {
+    visibility: hidden;
+    position: absolute;
+}
+
+.NSSlider > .handler:hover .info,
+.NSSlider > .handler:focus .info {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.NSSlider[aria-disabled=true] {
+    cursor: not-allowed;
+}
+
+/*
+
+NSRuler
+--------
+
+Attention: les variables css ne peuvent pas être utilisées pour les règles border-style
+*/
+
+.NSRuler {
+    --type: "solid";
+    --color: #999;
+    border-width: 0;
+    /* border-style: var(--type); */
+    border-style: solid;
+    border-color: var(--color);
+    position: static;
+    background-color: transparent;
+}
+.NSRuler hr {
+    display: none;
+}
+.NSRuler[aria-orientation=vertical] {
+    border-left-width: 1px;
+    height: 300px;
+}
+.NSRuler[aria-orientation=horizontal] {
+    width: 300px;
+    border-top-width: 1px;
+}
+
+/*
+
+NSWindowPane
+-------------
+*/
+
+.NSWindowPane {
+    position: absolute;
+    outline: none;
+    /* overflow: hidden; */
+    z-index: 10;
+}
+.NSWindowPane[data-state=maximize] {
+    box-sizing: border-box;
+}
+.NSWindowPane:focus {
+    outline: none;
+}
+
+.NSWindowPane > .hd {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.movable > .hd {
+    cursor: move;
+}
+
+.NSWindowPane > .hd > .hd-icon {
+    margin-right: 1ch;
+}
+
+.NSWindowPane > .hd > .hd-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.NSWindowPane > .hd[aria-hidden=true],
+.NSWindowPane > .bd[aria-hidden=true] {
+    display: none;
+}
+
+.NSWindowPane > .bd {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    overflow: auto;
+}
+
+.NSWindowPane .hd-controls {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.NSWindowPane .hd-controls img,
+.NSWindowPane .hd-controls span {
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 0 0 0 5px;
+}
+
+.NSWindowPane .border-resize {
+    position: absolute;
+    z-index: 4;
+}
+.NSWindowPane .border-resize[aria-hidden=true] {
+    display: none;
+}
+/* corners */
+.NSWindowPane .border-resize-top-left,
+.NSWindowPane .border-resize-top-right,
+.NSWindowPane .border-resize-bottom-right,
+.NSWindowPane .border-resize-bottom-left {
+    width: 5px;
+    height: 5px;
+}
+.NSWindowPane .border-resize-top-left {
+    top: 0;
+    left: 0;
+    cursor: nw-resize;
+}
+.NSWindowPane .border-resize-top-right {
+    top: 0;
+    right: 0;
+    cursor: ne-resize;
+}
+.NSWindowPane .border-resize-bottom-right {
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+}
+.NSWindowPane .border-resize-bottom-left {
+    bottom: 0;
+    left: 0;
+    cursor: sw-resize;
+}
+
+.NSWindowPane .border-resize-top,
+.NSWindowPane .border-resize-bottom {
+    height: 5px;
+    left: 5px;
+    right: 5px;
+}
+.NSWindowPane .border-resize-top {
+    cursor: n-resize;
+    top: 0;
+}
+.NSWindowPane .border-resize-bottom {
+    cursor: s-resize;
+    bottom: 0;
+}
+.NSWindowPane .border-resize-right,
+.NSWindowPane .border-resize-left {
+    width: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+.NSWindowPane .border-resize-right {
+    cursor: e-resize;
+    right: 0;
+}
+.NSWindowPane .border-resize-left {
+    cursor: w-resize;
+    left: 0;
+}
+
+/*
+
+NSFileUploader
+---------------
+*/
+
+.NSFileUploader {
+    position : relative;
+    width: 300px;
+    line-height: 25px;
+    height: 25px;
+    line-height: 25px;
+    zoom: 1;
+    text-align: left;
+}
+
+.NsFileUploader button {
+    cursor: pointer;
+}
+
+.NSFileUploader label {
+    display: block;
+    cursor: pointer;
+    box-sizing : border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.NSFileUploader .reset {
+    padding: 0;
+    background-color: transparent;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    vertical-align: top;
+    outline : none;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    border-color: #999;
+    color: #f00;
+}
+
+/* Zone de notification (nom de fichier) */
+
+.NSFileUploader > .info {
+    overflow: hidden;
+    box-sizing : border-box;
+    margin-left: 1px;
+    padding-left: 5px;
+    padding-right: 20px;
+    height: 100%;
+}
+
+.NSFileUploader > .info > .text {
+    display : inline-block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    color: #676767;
+}
+
+.NSFileUploader > .button-container {
+    float:left;
+    margin-right: 1px;
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    text-align: center;
+}
+
+.NSFileUploader > .button-container > button {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    padding : 0 6px;
+    box-sizing : border-box;
+    position : absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/*
+.NSFileUploader > .button-container > label {
+   border: 1px solid #bbb;
+   padding : 0px 6px;
+   border-radius : 2px;
+   background: rgb(254,254,254);
+   background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%,rgba(222,222,222,1) 100%);
+   background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%,rgba(222,222,222,1) 100%);
+   background: linear-gradient(to bottom, rgba(254,254,254,1) 0%,rgba(222,222,222,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#dedede',GradientType=0 );
+}
+.NSFileUploader .button-container label:active {
+    background: rgb(222,222,222);
+    background: -webkit-linear-gradient(top, rgba(222,222,222,1) 0%,rgba(254,254,254,1) 100%);
+    background: -ms-linear-gradient(top, rgba(222,222,222,1) 0%,rgba(254,254,254,1) 100%);
+    background: linear-gradient(to bottom, rgba(222,222,222,1) 0%,rgba(254,254,254,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#fefefe',GradientType=0 );
+}
+.NSFileUploader .button-container label:focus {
+   border-color: #444;
+}
+.NSFileUploader .button-container label:hover {
+   background-color: #ddd;
+   border-color: #444;
+}
+*/
+
+/* Barre de progression */
+
+.NSFileUploader > .progress {
+    overflow: hidden;
+    height:100%;
+    transition:display 0s linear 0.5s,opacity 0.5s linear;
+    position: relative;
+    zoom: 1;
+}
+
+.NSFileUploader > .progress > .bar {
+    width: 0%;
+    height: 100%;
+    font-size: 12px;
+    text-align: center;
+    transition: width 0.6s ease 0s, min-width 0.6s ease 0s;
+}
+
+.NSFileUploader > .progress > .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.NSFileUploader > .progress .over-half {
+    color: #eee;
+}
+
+
+.NSFileUploader .file-input {
+    /* visibility: hidden; */
+    position: absolute;
+    z-index: -100;
+    top : -10000px;
+    overflow: hidden;
+    /*display: none;*/
+}
+
+.NSFileUploader .button-container label[for]:focus,
+.NSFileUploader .button-container label[for]:active {
+    border-color : #444;
+}
+
+.NSFileUploader .file-input:focus + label {
+    border-color : #444;
+}
+
+
+/*
+
+Structures génériques
+=====================
+*/
+
+/*
+
+tricell
+--------
+
+Un tableau utilisé par Echo pour rendre une association icone - libellé.
+
+*/
+
+.tricell {
+    border-collapse: collapse;
+}
+.tricell td {
+    padding: 0;
+}
+.tricell-vertical-spacer {
+    font-size: 1px;
+    line-height: 0;
+    width:1px;
+}
+.tricell-horizontal-spacer {
+    font-size: 1px;
+    line-height: 0;
+}
+
+
+.natjet-uploader {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    width:100%;
+    height: 0;
+    z-index: -10;
+    background: rgba(0,0,0,0.5);
+}
+
+.natjet-uploader[aria-hidden=false] {
+    height: 100%;
+    z-index: 100;
+}
+
+
+/* debug */
+
+.natjet-uploader > iframe {
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    margin: 0 0 0 -125px;
+    overflow: hidden;
+    height: 50px;
+    width: 280px;
+    border: 0;
+    border-radius: 0 0 5px 5px;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 5px 5px 1px rgba(0,0,0,0.3);
+    transition: all 0.2s;
+}
+
+.natjet-uploader[aria-hidden=false] > iframe {
+    top: 0;
+}
+
+/*
+
+Popup
+--------
+*/
+
+.popup-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.popup-btn img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.popup-container {
+    position: relative;
+}
+
+.popup {
+    overflow: auto;
+    position: absolute;
+    z-index: 300;
+    display: none;
+    opacity: 0;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
+    transition: opacity 0.1s;
+}
+
+.popup[aria-hidden=false] {
+    display: block;
+    opacity: 1;
+}
+
+
+/* tests d'ajout de classes */
+
+.NSLabel.circle {
+    vertical-align: middle;
+}
+
+.resize-both {
+    resize: both;
+}
+.resize-horizontal {
+    resize: horizontal;
+}
+.resize-vertical {
+    resize: vertical;
+}
+
+
+/*
+
+autosize
+--------
+*/
+
+.component[data-autosizex=true] {
+    width: auto;
+}
+.component[data-autosizey=true] {
+    height: auto;
+}
+
+
+/*
+
+Selection range
+---------------
+*/
+
+.range-selector {
+    cursor: crosshair;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: rgba(42, 118, 198, 0.1);
+    border: 1px solid #2a76c6;
+    /* background-color: rgba(0,0,0,0.05);
+    border: 2px dashed #333; */
+}
+
+.range-selector[aria-hidden=true] {
+    display: none;
+}
+
+.range-selector[aria-hidden=false] {
+    display: block;
+}
+
+/*
+
+Gestion des contenu : text-icon
+--------------------
+*/
+
+.text-icon {
+    /* Provoque un bug de line-height (7352) */
+    display: inline-table;
+    /* width: 100%; */
+    /* height: 100%; */
+    text-overflow: inherit;
+    text-decoration: inherit;
+    overflow: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+[data-icon=true][data-text=true] > .text-icon {
+    width: auto;
+}
+
+.content-state {
+    /* display: table-cell; */
+    vertical-align: middle;
+}
+
+/* button .text-left,
+button .text-right {
+    display: inline-block;
+}
+
+.menuitem > .text-icon {
+    display: table;
+} */
+
+.text-icon > span {
+    display: table-cell;
+    vertical-align: middle;
+    text-overflow: inherit;
+    overflow: inherit;
+}
+
+.menuitem > .text-top,
+.menuitem > .text-bottom {
+    display: inline-block;
+}
+
+/* Alignements text / icon */
+
+.text-top > span,
+.text-bottom > span {
+    display: block;
+}
+
+.text-right > span,
+.text-left > span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.text-icon > [aria-hidden=true] {
+    display: none !important;
+}
+
+/* .text-left > [aria-hidden=false] + span,
+.text-right > [aria-hidden=false] + span {
+    padding-left: 5px;
+} */
+
+/*
+.text-icon > .content-state {
+    padding-right: 5px;
+}
+*/
+
+.text-top,
+.text-bottom {
+    text-align: center;
+    height: auto;
+}
+
+.text-top .content-icon,
+.text-bottom .content-icon {
+    width: 100%;
+}
+.text-top .content-text,
+.text-bottom .content-text {
+    padding: 0 5px;
+}
+
+/* .text-top > [aria-hidden=false] + span,
+.text-bottom > [aria-hidden=false] + span {
+    padding-top: 5px;
+} */
+
+/*
+
+FloatingPane
+--------------
+*/
+
+/* Ne pas focer les tailles pour les conteneur de flottants
+ * Dans le cas contraire les fenêtres fille de root (modales bien souvent)
+ * vont générer une scrollbar verticale.
+ */
+.floatingpane-container {
+    width: auto !important;
+    height: auto !important;
+}
+
+/* Cas particulier des fenêtre "docked" que l'on veut centrer à priori (EKSAE)
+ */
+.floatingdockedpane-container {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+
+Overlay
+--------
+*/
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 32600;
+}
+.overlay[aria-hidden=true] {
+    display: none;
+}
+.overlay[aria-hidden=false] {
+    display: block;
+}
+
+/*
+
+InTreeView, InListView
+----------------------------
+
+hériter certaines propriétés du tableau ou de la treeview
+
+*/
+
+.InTreeView,
+.InListView {
+    color: inherit;
+    font: inherit;
+}
+
+/*
+
+classes utilitaires
+--------------------
+*/
+
+/* classe permettant de définir une ombre */
+.shadowed {
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+.hide { display: none !important; }
+.hidden { visibility: hidden !important; }
+
+.st_disable { opacity : 0.5; }
+.st_disable a { color: #ccc !important; }
+.st_disable ul { display: none; }
+
+.uppercase { text-transform: uppercase; }
+
+.display-block {
+    display: block;
+}
+.border-box {
+    box-sizing: border-box;
+}
+
+
+.white-space-pre { white-space: pre !important; }
+.white-space-pre-wrap { white-space: pre-wrap !important; }
+.white-space-pre-line { white-space: pre-line !important; }
+
+.text-overflow {
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+    overflow: hidden;
+    max-width: 100%;
+}
+/*
+
+Objet à l'extérieur de l'écran et qui ne doit pas perturber le dessin.
+Utile pour insérer des éléments afin de mesurer certaines de leurs caractéristiques graphiques.
+
+*/
+
+.offscreen {
+    position: absolute;
+    top: -1300px;
+    left: -1700px;
+    width: 1600px;
+    height: 1200px;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.no-selection {
+    /* Interdire la sélection pour éviter un mauvais effet esthétique.
+    Interdire par js provoque des régressions dans l'émission des événements */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+}
+
+/*
+Une simple classe pour des objets à créer afin de porter certains comportements graphiques.
+Ne doit pas être visible ni intéragir avec la maquette
+*/
+.utils-placeholder {
+    position:absolute;
+    width:0;
+    height:0;
+    overflow:hidden;
+}
+
+/*
+
+Styles de debug
+---------------
+*/
+
+.debug-outline *:focus {
+    outline: 5px solid red !important;
+}
+
+/*
+
+WaitIndicatior
+--------------
+*/
+
+#serverDelayContainer {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    margin:0;
+    background-color: rgba(120,120,120, 0.2);
+    z-index: 100000;
+    overflow: hidden;
+    cursor: wait;
+}
+
+#serverDelay {
+    position: absolute;
+    top:35%;
+    left:50%;
+    margin-left: -100px;
+    max-width: 300px;
+    padding: 20px 30px;
+    background-color: #333;
+    color: #fff;
+    text-align:center;
+    border-radius: 5px;
+}
+#serverDelay[aria-hidden=true] {
+    display: none;
+}
+.modern > .blink {
+    opacity: 0;
+    animation-name: wait;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5s;
+}
+
+@keyframes wait {
+    50% {
+        opacity: 1.0;
+    }
+}
+
+
+/*
+
+Messages
+-------------------------
+*/
+
+/* Styles génériques non configuratble */
+#app-message {
+    position: absolute;
+    z-index: 32766;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.75);
+}
+#app-message > .content {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#app-message .message {
+    margin: 0;
+}
+#app-message .detail {
+    max-height: 10rem;
+    overflow: auto;
+    margin: 0 0 3rem;
+}
+#app-message .action {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    #app-message > .content > .message,
+    #app-message > .content > .action {
+        font-size: x-large;
+    }
+}
+
+/* styles personnalisables */
+#stopError {
+    font-size: 14px;
+    font-weight:bold;
+    text-decoration:none;
+    color:#ffffff;
+    background-color:#5f1f1f;
+}
+#stopError > .action {
+    padding: 10px;
+    background-color:#af2f2f;
+    margin: 0;
+}
+#sessionExpiration {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color:#1f1f5f;
+}
+
+#sessionExpiration > .action {
+    padding: 10px;
+    background-color:#2f2faf;
+    margin: 0;
+}
+
+noscript > p {
+    color: #fff;
+    background: #CE8A3A url("css/background.svg") no-repeat 50% 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px #333;
+}
+
+/**
+ * Classe pour les éléments HTML qui permettent de positionner les composants
+ */
+.positioner {
+    /*
+        Pour fixer un bug lorsque un élément à une fonte plus petite que son parent;
+        ATTENTION: peut poser problème si un composant n'a pas de taille de fonte défini
+    */
+    /* font-size: 0; */
+}
+
+/**
+ * Icone de tri par défaut de ListView/TreeView
+ */
+div.HeaderComponent.not-sorted img {
+    content:  url(?sid=Echo.Image&iid=fr/natsystem/natjet/echo/webcontainer/resource/image/not-sorted.png);
+}
+
+div.HeaderComponent.up-sorted img {
+    content:  url(?sid=Echo.Image&iid=fr/natsystem/natjet/echo/webcontainer/resource/image/ArrowUp.gif);
+}
+
+div.HeaderComponent.down-sorted img {
+    content:  url(?sid=Echo.Image&iid=fr/natsystem/natjet/echo/webcontainer/resource/image/ArrowDown.gif);
+}
+
+/**
+ * Icone de sous-menu par défaut
+ */
+span.menuitem-submenu-arrow img {
+    content:  url(?sid=Echo.Image&iid=fr/natsystem/natjet/echo/webcontainer/resource/image/menu/ArrowRight.gif);
+}
