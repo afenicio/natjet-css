@@ -1,0 +1,2299 @@
+.NSPushButton.back {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/back-white.png";
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/back-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.back[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.back[data-type=label]:hover,
+.NSPushButton.back[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.back[data-type=label]:disabled,
+.NSPushButton.back[data-type=label][aria-disabled=true],
+.NSPushButton.back[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.back[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.back[data-type=url]:hover,
+.NSPushButton.back[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.back[data-type=url]:disabled,
+.NSPushButton.back[data-type=url][aria-disabled=true],
+.NSPushButton.back[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.back:hover,
+.NSPushButton.back.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.back:disabled,
+.NSPushButton.back[aria-disabled=true],
+.NSPushButton.back.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.close {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/cross-white.png";
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/cross-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.close[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.close[data-type=label]:hover,
+.NSPushButton.close[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.close[data-type=label]:disabled,
+.NSPushButton.close[data-type=label][aria-disabled=true],
+.NSPushButton.close[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.close[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.close[data-type=url]:hover,
+.NSPushButton.close[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.close[data-type=url]:disabled,
+.NSPushButton.close[data-type=url][aria-disabled=true],
+.NSPushButton.close[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.close:hover,
+.NSPushButton.close.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.close:disabled,
+.NSPushButton.close[aria-disabled=true],
+.NSPushButton.close.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.create {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/new-white.png";
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/new-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.create[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.create[data-type=label]:hover,
+.NSPushButton.create[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.create[data-type=label]:disabled,
+.NSPushButton.create[data-type=label][aria-disabled=true],
+.NSPushButton.create[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.create[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.create[data-type=url]:hover,
+.NSPushButton.create[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.create[data-type=url]:disabled,
+.NSPushButton.create[data-type=url][aria-disabled=true],
+.NSPushButton.create[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.create:hover,
+.NSPushButton.create.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.create:disabled,
+.NSPushButton.create[aria-disabled=true],
+.NSPushButton.create.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.delete {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/cross-white.png";
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #e62a2c;
+    background-color: #e62a2c;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/cross-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.delete[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.delete[data-type=label]:hover,
+.NSPushButton.delete[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.delete[data-type=label]:disabled,
+.NSPushButton.delete[data-type=label][aria-disabled=true],
+.NSPushButton.delete[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.delete[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.delete[data-type=url]:hover,
+.NSPushButton.delete[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.delete[data-type=url]:disabled,
+.NSPushButton.delete[data-type=url][aria-disabled=true],
+.NSPushButton.delete[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.delete:hover,
+.NSPushButton.delete.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.delete:disabled,
+.NSPushButton.delete[aria-disabled=true],
+.NSPushButton.delete.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.navigation {
+    padding: 2px 5px 2px 5px;
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 100px;
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.navigation[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.navigation[data-type=label]:hover,
+.NSPushButton.navigation[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.navigation[data-type=label]:disabled,
+.NSPushButton.navigation[data-type=label][aria-disabled=true],
+.NSPushButton.navigation[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.navigation[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.navigation[data-type=url]:hover,
+.NSPushButton.navigation[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.navigation[data-type=url]:disabled,
+.NSPushButton.navigation[data-type=url][aria-disabled=true],
+.NSPushButton.navigation[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.navigation:hover,
+.NSPushButton.navigation.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.navigation:disabled,
+.NSPushButton.navigation[aria-disabled=true],
+.NSPushButton.navigation.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+.NSPushButton.read {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/read-white.png";
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/read-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.read[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.read[data-type=label]:hover,
+.NSPushButton.read[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.read[data-type=label]:disabled,
+.NSPushButton.read[data-type=label][aria-disabled=true],
+.NSPushButton.read[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.read[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.read[data-type=url]:hover,
+.NSPushButton.read[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.read[data-type=url]:disabled,
+.NSPushButton.read[data-type=url][aria-disabled=true],
+.NSPushButton.read[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.read:hover,
+.NSPushButton.read.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.read:disabled,
+.NSPushButton.read[aria-disabled=true],
+.NSPushButton.read.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.update {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/edit-white.png";
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/edit-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.update[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.update[data-type=label]:hover,
+.NSPushButton.update[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.update[data-type=label]:disabled,
+.NSPushButton.update[data-type=label][aria-disabled=true],
+.NSPushButton.update[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.update[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.update[data-type=url]:hover,
+.NSPushButton.update[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.update[data-type=url]:disabled,
+.NSPushButton.update[data-type=url][aria-disabled=true],
+.NSPushButton.update[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.update:hover,
+.NSPushButton.update.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.update:disabled,
+.NSPushButton.update[aria-disabled=true],
+.NSPushButton.update.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+.NSPushButton.save {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/save-white.png";
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #0070bb;
+    background-color: #008a00;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/save-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.save[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.save[data-type=label]:hover,
+.NSPushButton.save[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.save[data-type=label]:disabled,
+.NSPushButton.save[data-type=label][aria-disabled=true],
+.NSPushButton.save[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.save[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.save[data-type=url]:hover,
+.NSPushButton.save[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.save[data-type=url]:disabled,
+.NSPushButton.save[data-type=url][aria-disabled=true],
+.NSPushButton.save[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.save:hover,
+.NSPushButton.save.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.save:disabled,
+.NSPushButton.save[aria-disabled=true],
+.NSPushButton.save.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.search {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/search-white.png";
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #0070bb;
+    background-color: #008a00;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/search-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.search[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.search[data-type=label]:hover,
+.NSPushButton.search[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.search[data-type=label]:disabled,
+.NSPushButton.search[data-type=label][aria-disabled=true],
+.NSPushButton.search[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.search[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.search[data-type=url]:hover,
+.NSPushButton.search[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.search[data-type=url]:disabled,
+.NSPushButton.search[data-type=url][aria-disabled=true],
+.NSPushButton.search[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.search:hover,
+.NSPushButton.search.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.search:disabled,
+.NSPushButton.search[aria-disabled=true],
+.NSPushButton.search.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.share {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/share-white.png";
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/share-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.share[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.share[data-type=label]:hover,
+.NSPushButton.share[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.share[data-type=label]:disabled,
+.NSPushButton.share[data-type=label][aria-disabled=true],
+.NSPushButton.share[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.share[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.share[data-type=url]:hover,
+.NSPushButton.share[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.share[data-type=url]:disabled,
+.NSPushButton.share[data-type=url][aria-disabled=true],
+.NSPushButton.share[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.share:hover,
+.NSPushButton.share.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.share:disabled,
+.NSPushButton.share[aria-disabled=true],
+.NSPushButton.share.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.stop {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/stop-white.png";
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/stop-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.stop[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.stop[data-type=label]:hover,
+.NSPushButton.stop[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.stop[data-type=label]:disabled,
+.NSPushButton.stop[data-type=label][aria-disabled=true],
+.NSPushButton.stop[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.stop[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.stop[data-type=url]:hover,
+.NSPushButton.stop[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.stop[data-type=url]:disabled,
+.NSPushButton.stop[data-type=url][aria-disabled=true],
+.NSPushButton.stop[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.stop:hover,
+.NSPushButton.stop.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.stop:disabled,
+.NSPushButton.stop[aria-disabled=true],
+.NSPushButton.stop.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.sync {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/sync-white.png";
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #0070bb;
+    --disbaled-icon: "!I!/fr/natsystem/resources/pics/actions/sync-grey.png";
+    background-color: #0070bb;
+    width: 100px;
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.sync[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.sync[data-type=label]:hover,
+.NSPushButton.sync[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.sync[data-type=label]:disabled,
+.NSPushButton.sync[data-type=label][aria-disabled=true],
+.NSPushButton.sync[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.sync[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.sync[data-type=url]:hover,
+.NSPushButton.sync[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.sync[data-type=url]:disabled,
+.NSPushButton.sync[data-type=url][aria-disabled=true],
+.NSPushButton.sync[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.sync:hover,
+.NSPushButton.sync.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.sync:disabled,
+.NSPushButton.sync[aria-disabled=true],
+.NSPushButton.sync.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.validate {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/tick-white.png";
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/tick-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.validate[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.validate[data-type=label]:hover,
+.NSPushButton.validate[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.validate[data-type=label]:disabled,
+.NSPushButton.validate[data-type=label][aria-disabled=true],
+.NSPushButton.validate[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.validate[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.validate[data-type=url]:hover,
+.NSPushButton.validate[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.validate[data-type=url]:disabled,
+.NSPushButton.validate[data-type=url][aria-disabled=true],
+.NSPushButton.validate[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.validate:hover,
+.NSPushButton.validate.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.validate:disabled,
+.NSPushButton.validate[aria-disabled=true],
+.NSPushButton.validate.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.work {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/gear-white.png";
+    color: #ffffff;
+    height: 26px;
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/gear-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.work[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.work[data-type=label]:hover,
+.NSPushButton.work[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.work[data-type=label]:disabled,
+.NSPushButton.work[data-type=label][aria-disabled=true],
+.NSPushButton.work[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.work[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.work[data-type=url]:hover,
+.NSPushButton.work[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.work[data-type=url]:disabled,
+.NSPushButton.work[data-type=url][aria-disabled=true],
+.NSPushButton.work[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.work:hover,
+.NSPushButton.work.hover {
+    background-color: #cce2f1;
+    color: #0070bb;
+}
+
+.NSPushButton.work:disabled,
+.NSPushButton.work[aria-disabled=true],
+.NSPushButton.work.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+
+.NSPushButton.validate[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.validate[data-type=label]:hover,
+.NSPushButton.validate[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.validate[data-type=label]:disabled,
+.NSPushButton.validate[data-type=label][aria-disabled=true],
+.NSPushButton.validate[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.validate[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.validate[data-type=url]:hover,
+.NSPushButton.validate[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.validate[data-type=url]:disabled,
+.NSPushButton.validate[data-type=url][aria-disabled=true],
+.NSPushButton.validate[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.validate:hover,
+.NSPushButton.validate.hover {
+    background-color: #d1f8d1;
+    color: #55aa55;
+}
+
+.NSPushButton.validate:disabled,
+.NSPushButton.validate[aria-disabled=true],
+.NSPushButton.validate.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.cancel {
+    padding: 2px 5px 2px 5px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/cross-white.png";
+    color: #ffffff;
+    --rollover-icon: "!I!/fr/natsystem/resources/pics/actions/cross.png";
+    height: 26px;
+    border: 2px solid #e62a2c;
+    background-color: #e62a2c;
+    width: 100px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/cross-grey.png";
+    text-align: left;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSPushButton.cancel[data-type=label] {
+    border: 0px solid #eeeeee;
+    text-align: left;
+    color: #0070bb;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.cancel[data-type=label]:hover,
+.NSPushButton.cancel[data-type=label].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.cancel[data-type=label]:disabled,
+.NSPushButton.cancel[data-type=label][aria-disabled=true],
+.NSPushButton.cancel[data-type=label].disabled {
+    border: 0px solid rgba(0,0,0,0);
+    color: #999999;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.cancel[data-type=url] {
+    color: #0070bb;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration:  underline;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    border: 0px solid #eeeeee;
+}
+
+.NSPushButton.cancel[data-type=url]:hover,
+.NSPushButton.cancel[data-type=url].hover {
+    border: 0px solid #eeeeee;
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.cancel[data-type=url]:disabled,
+.NSPushButton.cancel[data-type=url][aria-disabled=true],
+.NSPushButton.cancel[data-type=url].disabled {
+    color: #999999;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+.NSPushButton.cancel:hover,
+.NSPushButton.cancel.hover {
+    background-color: #e3bcbc;
+    color: #e62a2c;
+}
+
+.NSPushButton.cancel:disabled,
+.NSPushButton.cancel[aria-disabled=true],
+.NSPushButton.cancel.disabled {
+    border: 2px solid #999999;
+    color: #999999;
+    background-color: #eeeeee;
+}
+
+
+.NSPushButton.action {
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 110px;
+    color: #ffffff;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.action:hover,
+.NSPushButton.action.hover {
+    background-color: #0070bb;
+    color: #ffffff;
+}
+
+.NSPushButton.action:disabled,
+.NSPushButton.action[aria-disabled=true],
+.NSPushButton.action.disabled {
+    border: 1px solid #eeeeee;
+    color: #cccccc;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.validate {
+    border: 2px solid #008a00;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/tick-white.png";
+    color: #ffffff;
+    background-color: #008a00;
+    width: 110px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/tick-disabled.png";
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.validate:hover,
+.NSPushButton.validate.hover {
+    background-color: #00a600;
+}
+
+.NSPushButton.validate:disabled,
+.NSPushButton.validate[aria-disabled=true],
+.NSPushButton.validate.disabled {
+    border: 2px solid #eeeeee;
+    color: #cccccc;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.cancel {
+    border: 2px solid #ac193d;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/cross-white.png";
+    color: #ffffff;
+    background-color: #ac193d;
+    width: 110px;
+    --disabled-icon: "!I!/fr/natsystem/resources/pics/actions/cross-disabled.png";
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.cancel:hover,
+.NSPushButton.cancel.hover {
+    background-color: #ffffff;
+    color: #ac193d;
+}
+
+.NSPushButton.cancel:disabled,
+.NSPushButton.cancel[aria-disabled=true],
+.NSPushButton.cancel.disabled {
+    border: 2px solid #eeeeee;
+    color: #cccccc;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.create {
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 110px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/new-white.png";
+    color: #ffffff;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.create:hover,
+.NSPushButton.create.hover {
+    background-color: #2e8def;
+}
+
+.NSPushButton.create:disabled,
+.NSPushButton.create[aria-disabled=true],
+.NSPushButton.create.disabled {
+    border: 2px solid #eeeeee;
+    color: #cccccc;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.edit {
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 110px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/edit-white.png";
+    color: #ffffff;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.edit:hover,
+.NSPushButton.edit.hover {
+    background-color: #2e8def;
+}
+
+.NSPushButton.edit:disabled,
+.NSPushButton.edit[aria-disabled=true],
+.NSPushButton.edit.disabled {
+    border: 2px solid #eeeeee;
+    color: #cccccc;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.read {
+    border: 2px solid #0070bb;
+    background-color: #0070bb;
+    width: 110px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/read-white.png";
+    color: #ffffff;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.read:hover,
+.NSPushButton.read.hover {
+    background-color: #2e8def;
+}
+
+.NSPushButton.read:disabled,
+.NSPushButton.read[aria-disabled=true],
+.NSPushButton.read.disabled {
+    border: 2px solid #eeeeee;
+    color: #cccccc;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.save {
+    border: 2px solid #008a00;
+    background-color: #008a00;
+    width: 110px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/save-white.png";
+    color: #ffffff;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.save:hover,
+.NSPushButton.save.hover {
+    background-color: #00a600;
+}
+
+.NSPushButton.save:disabled,
+.NSPushButton.save[aria-disabled=true],
+.NSPushButton.save.disabled {
+    border: 2px solid #eeeeee;
+    color: #cccccc;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.delete {
+    border: 2px solid #ac193d;
+    background-color: #ac193d;
+    width: 110px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/cross-white.png";
+    color: #ffffff;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.delete:hover,
+.NSPushButton.delete.hover {
+    background-color: #bf1e4b;
+}
+
+.NSPushButton.delete:disabled,
+.NSPushButton.delete[aria-disabled=true],
+.NSPushButton.delete.disabled {
+    border: 2px solid #eeeeee;
+    color: #cccccc;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.back {
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #bababa;
+    border-bottom: 1px solid #bababa;
+    border-left: 1px solid #cccccc;
+    --icon: "!I!/fr/natsystem/resources/pics/chevrons/left-black.png";
+    color: #666666;
+    background-color: #f5f5f5;
+    width: 110px;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.back:hover,
+.NSPushButton.back.hover {
+    background-color: #dff4ff;
+    border: 1px solid #c2e1ef;
+    color: #336699;
+}
+
+.NSPushButton.back:disabled,
+.NSPushButton.back[aria-disabled=true],
+.NSPushButton.back.disabled {
+    border: 1px solid #eeeeee;
+    color: #cccccc;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.search {
+    border: 2px solid #008a00;
+    background-color: #008a00;
+    width: 110px;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/search-white.png";
+    color: #ffffff;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.search:hover,
+.NSPushButton.search.hover {
+    background-color: #00a600;
+}
+
+.NSPushButton.search:disabled,
+.NSPushButton.search[aria-disabled=true],
+.NSPushButton.search.disabled {
+    border: 2px solid #eeeeee;
+    color: #cccccc;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.activate {
+    border: 2px solid #0070bb;
+    border-radius: 5px;
+    background-color: #0070bb;
+    width: 110px;
+    color: #ffffff;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.activate:hover,
+.NSPushButton.activate.hover {
+    background-color: #2e8def;
+}
+
+.NSPushButton.activate:disabled,
+.NSPushButton.activate[aria-disabled=true],
+.NSPushButton.activate.disabled {
+    border: 2px solid #eeeeee;
+    color: #cccccc;
+    background-color: #eeeeee;
+}
+
+/**********/
+
+
+.NSPushButton.close {
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #bababa;
+    border-bottom: 1px solid #bababa;
+    border-left: 1px solid #cccccc;
+    --icon: "!I!/fr/natsystem/resources/pics/actions/cross.png";
+    color: #666666;
+    border-radius: 3px;
+    background-color: #f5f5f5;
+    width: 30px;
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+}
+
+.NSPushButton.close:hover,
+.NSPushButton.close.hover {
+    background-color: #dff4ff;
+    border: 1px solid #c2e1ef;
+    color: #336699;
+}
+
+.NSPushButton.close:disabled,
+.NSPushButton.close[aria-disabled=true],
+.NSPushButton.close.disabled {
+    border: 1px solid #eeeeee;
+    color: #cccccc;
+    background-color: #eeeeee;
+}
+
+
+/*********/
+
+
+.NSMessageDialog.Default {
+    box-shadow: 0px 1px 1px 2000px rgba(0, 0, 0, 0.6);
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Default > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Default > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0068b4;
+}
+
+.NSMessageDialog.Default > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+/**********/
+
+
+.NSMessageDialog.Emergency {
+    box-shadow: 0px 1px 1px 2000px rgba(0, 0, 0, 0.6);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/error.png";
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Emergency > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Emergency > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0068b4;
+}
+
+.NSMessageDialog.Emergency > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Alert {
+    box-shadow: 0px 1px 1px 2000px rgba(0, 0, 0, 0.6);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/error.png";
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Alert > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Alert > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0068b4;
+}
+
+.NSMessageDialog.Alert > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Critical {
+    box-shadow: 0px 1px 1px 2000px rgba(0, 0, 0, 0.6);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/error.png";
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Critical > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Critical > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0068b4;
+}
+
+.NSMessageDialog.Critical > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Error {
+    box-shadow: 0px 1px 1px 2000px rgba(0, 0, 0, 0.6);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/error.png";
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Error > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Error > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0068b4;
+}
+
+.NSMessageDialog.Error > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Notice {
+    box-shadow: 0px 1px 1px 2000px rgba(0, 0, 0, 0.6);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/information.png";
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Notice > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Notice > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0068b4;
+}
+
+.NSMessageDialog.Notice > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Informational {
+    box-shadow: 0px 1px 1px 2000px rgba(0, 0, 0, 0.6);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/information.png";
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Informational > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Informational > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0068b4;
+}
+
+.NSMessageDialog.Informational > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Debug {
+    box-shadow: 0px 1px 1px 2000px rgba(0, 0, 0, 0.6);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/information.png";
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Debug > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Debug > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0068b4;
+}
+
+.NSMessageDialog.Debug > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Success {
+    box-shadow: 0px 1px 1px 2000px rgba(0, 0, 0, 0.6);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/success.png";
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Success > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Success > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0068b4;
+}
+
+.NSMessageDialog.Success > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Question {
+    box-shadow: 0px 1px 1px 2000px rgba(0, 0, 0, 0.6);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/question.png";
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Question > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Question > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0068b4;
+}
+
+.NSMessageDialog.Question > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Custom {
+    box-shadow: 0px 1px 1px 2000px rgba(0, 0, 0, 0.6);
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Custom > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Custom > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0068b4;
+}
+
+.NSMessageDialog.Custom > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Progress {
+    box-shadow: 0px 1px 1px 2000px rgba(0, 0, 0, 0.6);
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Progress > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Progress .progressbar {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: #e6e6e6;
+}
+
+.NSMessageDialog.Progress > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0068b4;
+}
+
+.NSMessageDialog.Progress .progressbar > .value {
+    background-color: #0064b4;
+}
+
+.NSMessageDialog.Progress > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Warning {
+    box-shadow: 0px 1px 1px 2000px rgba(0, 0, 0, 0.6);
+    --icon: "!I!/fr/natsystem/resources/pics/dialog/warning.png";
+    color: #111111;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSMessageDialog.Warning > .ft {
+    padding: 0px 20px 20px 20px;
+}
+
+.NSMessageDialog.Warning > .hd {
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-stack);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0068b4;
+}
+
+.NSMessageDialog.Warning > .bd {
+    padding: 20px 20px 20px 20px;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    white-space: pre-line;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.NSPushButton.MessageDialog-Button {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: #0068b4;
+    padding: 5px 20px 5px 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 20px;
+}
+
+.NSPushButton.MessageDialog-Button:hover,
+.NSPushButton.MessageDialog-Button.hover {
+    color: #ffffff;
+}
+
+.NSPushButton.MessageDialog-Button:focus {
+    color: #ffffff;
+}
+
+.NSPushButton.MessageDialog-Button:disabled,
+.NSPushButton.MessageDialog-Button[aria-disabled=true],
+.NSPushButton.MessageDialog-Button.disabled {
+    color: #999999;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NSPushButton.MessageDialog-Affirmative {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: #0068b4;
+    padding: 5px 20px 5px 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 20px;
+}
+
+.NSPushButton.MessageDialog-Affirmative:hover,
+.NSPushButton.MessageDialog-Affirmative.hover {
+    color: #ffffff;
+}
+
+.NSPushButton.MessageDialog-Affirmative:focus {
+    color: #ffffff;
+}
+
+.NSPushButton.MessageDialog-Affirmative:disabled,
+.NSPushButton.MessageDialog-Affirmative[aria-disabled=true],
+.NSPushButton.MessageDialog-Affirmative.disabled {
+    color: #999999;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NSPushButton.MessageDialog-Alternate {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: #0068b4;
+    padding: 5px 20px 5px 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 20px;
+}
+
+.NSPushButton.MessageDialog-Alternate:hover,
+.NSPushButton.MessageDialog-Alternate.hover {
+    color: #ffffff;
+}
+
+.NSPushButton.MessageDialog-Alternate:focus {
+    color: #ffffff;
+}
+
+.NSPushButton.MessageDialog-Alternate:disabled,
+.NSPushButton.MessageDialog-Alternate[aria-disabled=true],
+.NSPushButton.MessageDialog-Alternate.disabled {
+    color: #999999;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NSPushButton.MessageDialog-Cancel {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: #0068b4;
+    padding: 5px 20px 5px 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 20px;
+}
+
+.NSPushButton.MessageDialog-Cancel:hover,
+.NSPushButton.MessageDialog-Cancel.hover {
+    color: #ffffff;
+}
+
+.NSPushButton.MessageDialog-Cancel:focus {
+    color: #ffffff;
+}
+
+.NSPushButton.MessageDialog-Cancel:disabled,
+.NSPushButton.MessageDialog-Cancel[aria-disabled=true],
+.NSPushButton.MessageDialog-Cancel.disabled {
+    color: #999999;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NSPushButton.MessageDialog-Close {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: #0068b4;
+    padding: 5px 20px 5px 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-family: var(--font-stack);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 20px;
+}
+
+.NSPushButton.MessageDialog-Close:hover,
+.NSPushButton.MessageDialog-Close.hover {
+    color: #ffffff;
+}
+
+.NSPushButton.MessageDialog-Close:focus {
+    color: #ffffff;
+}
+
+.NSPushButton.MessageDialog-Close:disabled,
+.NSPushButton.MessageDialog-Close[aria-disabled=true],
+.NSPushButton.MessageDialog-Close.disabled {
+    color: #999999;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/**********/
+
+
+
+.NSLabel.log {
+    color: #ff6800;
+    font-family: var(--font-stack);
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NSLabel.del {
+    color: #333333;
+    font-family: var(--font-stack);
+    font-size: 14px;
+    text-decoration:  line-through;
+}
+
+.NSLabel.del:disabled,
+.NSLabel.del[aria-disabled=true],
+.NSLabel.del.disabled {
+    color: #999999;
+}
